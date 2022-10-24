@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+.home-carousel-two {
+  background-color: #e1e1e1;
+}
+.home-carousel-two .container {
+  max-width: 85%;
+}
+.home-carousel-two .home-carousel-two-heading {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #010000;
+  max-width: 36%;
+  max-height: auto;
+  margin: 0;
+}
+.home-carousel-two .home-carousel-two-img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=home.css.map */
