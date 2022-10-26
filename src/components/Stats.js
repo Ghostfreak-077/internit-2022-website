@@ -57,7 +57,7 @@ const Stats = () => {
         </ul>
       </div>
 
-      <div className="table container">
+      <div className="table container my-5">
         <div className="table-heading bg-black text-light text-start d-flex">
           <div className="sno col-1"></div>
           <div className="team-name col-7">Team Name</div>
@@ -67,7 +67,7 @@ const Stats = () => {
         {team_list.map((element) => {
 
           return (
-            <div className='table-data d-flex text-start'>
+            <div className={`table-data d-flex text-start ${element.sno%2!==0?'lighter-bg':'darker-bg'}`}>
               <div className="sno col-1 text-center">{element.sno}</div>
               <div className="team-name col-7">{element.team}</div>
               <div className="match-played ps-3 col-2">{element.mp}</div>

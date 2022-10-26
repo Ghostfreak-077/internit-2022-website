@@ -13,8 +13,31 @@
     color: #878787;
 }
 
+.table-heading{
+    align-items: center;
+    height: 48px;
+    font-size: large;
+
+    /* Black */
+    background: #010000;
+}
+
 .games-nav .container{
-    
+    max-width: 900px;
+}
+
+.table-data{
+    align-items: center;
+    height: 48px;
+    color: #19204E;
+}
+
+.table .lighter-bg{
+    background: #E1E1E1;
+}
+
+.table .darker-bg{
+    background: #D6D6D6;
 }
 
 .stats-games-sel{
