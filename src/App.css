@@ -1,31 +1,158 @@
-/* 
+/* Rayyan Styling starts  */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.scores{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-container{
+  position: relative;
+  margin-top: 40px;
+  height: 16vh;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1E1E1;
+}
+
+.match-title{
+  width: 30%;
+  position: absolute;
+  top: -22px;
+  left: 35%;
+  z-index: 1;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  background-color: red;
+  font-weight: bold;
   color: white;
+  font-family: sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.match-details{
+  font-family: "Roboto Condensed";
+  font-size: 1.15em;
+  font-weight: bold;
+  position: absolute;
+  top: -1.4em;
+  left: 0;
 }
 
+.team1{
+  font-family: "Roboto Condensed";
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  width: 37.5%;
+}
+
+.team2{
+  font-family: "Roboto Condensed";
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  width: 37.5%;
+  text-align: left;
+}
+
+.score-box{
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vs{
+  font-size: 0.7em;
+}
+
+.score{
+  padding: 1em;
+  font-size: 1.6em;
+}
+
+.team-name1{
+  font-weight: bold;
+  margin: auto 1em auto 0;
+}
+
+.team-name2{
+  font-weight: bold;
+  margin: auto 0 auto 1em;
+}
+
+.team-logo{
+  height: 2.4em;
+  width: 2.4em;
+  clip-path: circle();
+
+}
+
+.sport-categories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* padding: auto 0; */
+  height: 15vh;
+  width: 90%;
+
+}
+
+.sport-cat-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+
+.sport-cat-container li{
+  font-size: 1.5em;
+  color: #E1E1E1;
+  font-weight: bold;
+  list-style: none;
+}
+
+.sport-cat-container li:hover{
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.sport-cat-container li button:focus{
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.sort-cat{
+  margin: 0 auto 50px auto;
+  width: 95%;
+}
+
+.sort-cat span{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.dropdown{
+  background-color: darkblue;
+  border-radius: none !important;
+}
+
+/* Rayyan Styling ends */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
