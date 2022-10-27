@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from './components/Home/Home';
+import Home from './components/Home';
 import NavBars from './components/NavBars';
 import Far from './components/Far';
 import Stats from './components/Stats';
