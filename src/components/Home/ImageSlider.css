@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,900;1,500&display=swap');
+  
+.InterNIT{
+    font-size: 6rem;
+    color: #ffffff;
+    position: absolute;
+    top: 0.1em;
+    right: 0.8em;
+    z-index: 1;
+    font-weight: 500;
+    font-family: Oswald;
+
+}
+
+.imgslider{
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderDiv{
+    position: relative;
+}
+
+.TextForRotation{
+    position: absolute;
+    color: white;
+    font-family: Oswald;
+    top: 75%;
+    font-size: 4rem;
+    z-index: 1;
+    left: 1.7em;
+}
+
+.nit_silchar{
+    font-size: 6rem;
+    color: #ffffff;
+    position: absolute;
+    top: 1.5em;
+    right: 0.9em;
+    z-index: 1;
+    font-weight: 500;
+    font-family: Oswald;
+}
+
+.tag {
+    text-align: center;
+}
+  
+.slick-slide img {
+    margin: auto;
+    width: 100%;
+
+}
