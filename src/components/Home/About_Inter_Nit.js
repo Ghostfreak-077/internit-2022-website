@@ -1,4 +1,4 @@
-import Director_Sir from '../Assets_Images/Director_Sir.png'
+import Director_Sir from './Assets_Images/Director_Sir.png'
 import React from 'react'
 import "../Home/About_Inter_Nit.css"
 

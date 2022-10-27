@@ -1,6 +1,6 @@
-import Picture from '../Assets_Images/Picture.png'
-import Picture2 from '../Assets_Images/Picture2.png'
-import Picture3 from '../Assets_Images/Picture3.png'
+import Picture from './Assets_Images/Picture.png'
+import Picture2 from './Assets_Images/Picture2.png'
+import Picture3 from './Assets_Images/Picture3.png'
 
 const images = [{
     id: 1,
