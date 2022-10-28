@@ -1,8 +1,8 @@
 import React from 'react'
-import About_Inter_Nit from './About_Inter_Nit'
-import ImageSlider from '../Home/ImageSlider'
-import images from '../Home/Images';
-import What_We_Offer from '../Home/What_We_Offer'
+import About_Inter_Nit from './Home/About_Inter_Nit'
+import ImageSlider from './Home/ImageSlider'
+import images from './Home/Images';
+import What_We_Offer from './Home/What_We_Offer'
 
 const Home = () => {
   return (

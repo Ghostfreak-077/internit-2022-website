@@ -8,7 +8,7 @@
 
 
 .Background_Nit{
-    background-image: url(../Assets_Images/Background_Nit.png);
+    background-image: url(./Assets_Images/Background_Nit.png);
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
