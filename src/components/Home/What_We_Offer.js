@@ -1,8 +1,8 @@
 import React from 'react'
 import '../Home/What_We_Offer.css'
-import Badminton_Vector from '../Assets_Images/Badminton_Vector.png'
-import Chess_Vec from '../Assets_Images/Chess_Vector.png'
-import TT_Vector from '../Assets_Images/TT_Vector.png'
+import Badminton_Vector from './Assets_Images/Badminton_Vector.png'
+import Chess_Vec from './Assets_Images/Chess_Vector.png'
+import TT_Vector from './Assets_Images/TT_Vector.png'
 
 export default function What_We_Offer(){
     return(
