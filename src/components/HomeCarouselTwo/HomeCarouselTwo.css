@@ -1,0 +1,15 @@
+.carousel-two-bg {
+  background: #e1e1e1;
+}
+.carousel-two-container {
+  padding: 3rem;
+  max-width: 85%;
+}
+.carousel-two-heading {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 1rem 0rem;
+}

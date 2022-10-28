@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+.upcoming-image-holder {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.upcoming-image {
+  width: 100%;
+  padding: 0;
+  transition: ease-in-out;
+  transition: 500ms;
+}
+.upcoming-card-holder:hover .upcoming-image-holder .upcoming-image {
+  transform: scale(1.05);
+}
+.upcoming-image-title {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  padding: 1rem;
+  z-index: 1;
+}
