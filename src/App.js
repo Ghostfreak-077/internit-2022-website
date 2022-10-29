@@ -12,7 +12,6 @@ import FixturesAndResults from './components/FixturesAndResults/FixturesAndResul
 import Stats from './components/Stats';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
-import FixturesAndResults from './components/FixturesAndResults/FixturesAndResults';
 
 function App() {
   return (
