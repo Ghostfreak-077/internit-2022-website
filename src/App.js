@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import NavBars from './components/NavBars';
-import Far from './components/Far';
+import FixturesAndResults from './components/FixturesAndResults/FixturesAndResults'
 import Stats from './components/Stats';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
