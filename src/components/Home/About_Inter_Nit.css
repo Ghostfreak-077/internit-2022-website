@@ -44,3 +44,54 @@
     color: white;
     font-family: Oswald;
 }
+
+
+@media (max-width: 800px){
+    .Background_Nit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Director_Sir_Img{
+        width: auto;
+        overflow: hidden;
+        margin-inline: 3em;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 470px){
+    .Want_to{
+        font-size: 1rem;
+    }
+    .About_Inter_Nit{
+        font-size: 2.2rem;
+    }
+    .Long_Para{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+    .Director_Sir_Img{
+        height: 20em;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+}
+
+@media (max-width: 380px){
+    .Want_to{
+        font-size: 1rem;
+    }
+    .About_Inter_Nit{
+        font-size: 1.9rem;
+    }
+    .Long_Para{
+        font-size: 0.75rem;
+        line-height: 1.4rem;
+    }
+    .Director_Sir_Img{
+        height: 20em;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+}

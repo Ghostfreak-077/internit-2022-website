@@ -12,6 +12,7 @@ import Far from './components/Far';
 import Stats from './components/Stats';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
+import FixturesAndResults from './components/FixturesAndResults/FixturesAndResults';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
     <Routes>
 
       <Route path='/' element={<Home/>}/>
-      <Route path='/far' element={<Far/>}/>
+      <Route path='/far' element={<FixturesAndResults/>}/>
       <Route path='/stats' element={<Stats/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>

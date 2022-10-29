@@ -1,10 +1,10 @@
-import Picture from './Assets_Images/Picture.png'
+import Picture1 from './Assets_Images/Picture1.png'
 import Picture2 from './Assets_Images/Picture2.png'
 import Picture3 from './Assets_Images/Picture3.png'
 
 const images = [{
     id: 1,
-    src: `${Picture}`,
+    src: `${Picture1}`,
     text:"Badminton",
     alt: 'Badminton Image'
     },
