@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import NavBars from './components/NavBars';
-import Far from './components/Far';
+import FixturesAndResults from './components/FixturesAndResults/FixturesAndResults'
 import Stats from './components/Stats';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
@@ -21,7 +21,7 @@ function App() {
     <Routes>
 
       <Route path='/' element={<Home/>}/>
-      <Route path='/far' element={<Far/>}/>
+      <Route path='/far' element={<FixturesAndResults/>}/>
       <Route path='/stats' element={<Stats/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>
