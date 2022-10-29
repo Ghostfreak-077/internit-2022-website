@@ -3,21 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
-/* .App {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+body{
+    transition: 0.5s ease;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
 
 .scores {
-    /* position: relative; */
-    max-height: 70vh;
+    max-height: 60vh;
     margin-top: 50px;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
     justify-content: space-between;
     align-items: center;
     overflow-y: auto;
@@ -25,10 +23,8 @@
 
 .score-container {
     position: relative;
-    /* margin-top: 40px; */
-    /* margin-top: 88px; */
     margin: 40px 0;
-    min-height: 148px !important;
+    min-height: 148px ;
     width: 85%;
     display: flex;
     justify-content: center;
@@ -39,7 +35,6 @@
 .match-title {
     font-family: "Roboto Condensed";
     width: 27.5%;
-    /* height: 60px; */
     position: absolute;
     top: -27px;
     left: 36.25%;
@@ -123,7 +118,7 @@
 .sport-categories {
     font-family: 'Oswald', sans-serif;
     display: flex;
-
+    padding: 0;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -133,13 +128,13 @@
 }
 
 .sport-cat-container {
-    /* font-family: "Roboto Condensed"; */
     font-weight: bold;
     font-size: 1.2em;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-
+    margin: 0;
+    padding: 0;
 }
 
 .sport-cat-container li {
@@ -176,6 +171,7 @@
 
 /* Style The Dropdown Button */
 .dropbtn {
+    margin-left: 30px;
     font-family: "Roboto Condensed";
     width: 176px;
     height: 50px;
@@ -194,31 +190,21 @@
     font-size: 1.1em;
 }
 
-/* .dropbtn:hover{
-    transform: rotate(90deg);
-} */
-
-/* .dropbtn img{
-    animation: rotate;
-} */
-
-/* @keyframes rotate {
-    100%{transform: rotate(90deg);}
-    
-} */
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 176px;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     font-family: "Roboto Condensed";
     text-align: center;
-    width: 176px;
     height: 50px;
+    width: 100%;
+    margin-left: 30px;
+    font-size: 1.2em;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -227,9 +213,8 @@
     z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
-    color: white;
+    color: white !important;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -237,21 +222,11 @@
     border-bottom: 1px solid white;
 }
 
-/* Change color of dropdown links on hover */
-/* .dropdown-content a:hover {
-}
-
-.dropdown-content:hover {
-} */
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.show{
     display: block;
 }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #19204E;
+.invert{
+    transform: rotate(180deg);
 }
 
 .add-info{
@@ -263,5 +238,73 @@
     bottom: 7%;
     left: 40%;
 }
+
+.selected{
+    text-decoration: underline;
+    color:#19204E !important;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .sport-categories{
+        width: 100%;
+    }
+    .sport-cat-container li{
+        font-size: 1.1em;
+    }
+    .match-details{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85em;
+    }
+    .match-title{
+        font-size: 0.9em;
+        top: -2em;
+    }
+    .score-container{
+        font-size: 0.7em;
+        min-height: 100px !important; ;
+
+    }
+    .team1{
+        width: 30%;
+        font-size: 0.7em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team2{
+        width: 30%;
+        font-size: 0.7em;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .team-name1{
+        margin: 0 auto 0.5em auto;
+    }
+    .team-name2{
+        margin: 0 auto 0.5em auto;
+    }
+    .score-box{
+        width: 35%;
+    }
+    .score{
+        padding: 0.5em;
+    }
+    .sort-cat{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dropdown-content {
+        margin-left: 0;
+    }
+    .dropbtn {
+        margin-left: 0;
+    }
+  }
+  
 
 /* Rayyan Styling ends */
