@@ -2,8 +2,14 @@
 
 .flex-container{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
     justify-content: center;
+}
+
+.inside{
+    width: 24em;
+    height: auto;   
 }
  
 .ourFeatures{
@@ -33,11 +39,85 @@
     color: #878787;
     font-size: 1.2rem;
     line-height: 1.4em;
-    font-stretch: condensed;
 }
 
 .Round_VecB{
     justify-content: center;
     display: flex;
-    margin: 3em;
+}
+
+@media (max-width: 370px){
+    .ourFeatures{
+        font-size: 1rem;
+    }
+    .whatWeOffer{
+        font-size: 2rem;
+    }
+    .Round_Vec{
+        width: 45vw;
+    }
+    .WriteList{
+        font-size: 1.1rem;
+    }
+    .inside{
+        width: 18em;
+        height: auto;
+    }
+}
+
+@media (max-width: 346px){
+    .ourFeatures{
+        font-size: 0.8rem;
+    }
+    .whatWeOffer{
+        font-size: 1.6rem;
+    }
+    .Round_Vec{
+        width: 38vw;
+    }
+    .WriteList{
+        font-size: 0.9rem;
+    }
+    .inside{
+        width: 18em;
+        height: 22em;
+    }
+}
+
+@media (max-width: 305px){
+    .ourFeatures{
+        font-size: 0.8rem;
+    }
+    .whatWeOffer{
+        font-size: 1.6rem;
+    }
+    .Round_Vec{
+        width: 38vw;
+    }
+    .WriteList{
+        font-size: 0.9rem;
+    }
+    .inside{
+        width: 18em;
+        height: 26em;
+    }
+}
+
+@media (max-width: 260px){
+    .ourFeatures{
+        font-size: 0.8rem;
+    }
+    .whatWeOffer{
+        font-size: 1.6rem;
+    }
+    .Round_Vec{
+        width: 38vw;
+    }
+    .WriteList{
+        font-size: 0.9rem;
+    }
+    .inside{
+        width: 18em;
+        height: 31em;
+    }
 }

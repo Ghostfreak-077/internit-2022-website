@@ -6,45 +6,51 @@ import TT_Vector from './Assets_Images/TT_Vector.png'
 
 export default function What_We_Offer(){
     return(
-        <div className='Parent_DIVw my-2'>
+        <div className='Parent_DIVw my-4 mx-5'>
             <p className='ourFeatures'>OUR FEATURES</p>
-            <p className='whatWeOffer'>WHAT WE OFFER</p>
-                <div className='flex-container mx-5'>
-                    <div>
-                        <div className="Round_VecB">
+            <p className='whatWeOffer mb-4'>WHAT WE OFFER</p>
+                <div className='flex-container'>
+                    <div className='inside'>
+                        <div className="Round_VecB my-3">
                             <img className='Round_Vec' src={Badminton_Vector} alt="Badminton"></img>
                         </div>
-                        <ul className='WriteList mx-4'>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        </ul>
+                        <div className='ListWhat'>
+                            <ul className='WriteList'>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <div className='Round_VecB'>
+                    <div className='inside'>
+                        <div className='Round_VecB my-3'>
                             <img className='Round_Vec' src={Chess_Vec} alt="Chess"></img>
                         </div>
-                        <ul className='WriteList mx-4'>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        </ul>
+                        <div className='ListWhat'>
+                            <ul className='WriteList'>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <div className='Round_VecB'>
+                    <div className='inside'>
+                        <div className='Round_VecB my-3'>
                             <img className='Round_Vec' src={TT_Vector} alt="Table Tennis"></img>
                         </div>
-                        <ul className='WriteList mx-4'>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        </ul>
+                        <div className='ListWhat'>
+                            <ul className='WriteList'>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>    
         </div>

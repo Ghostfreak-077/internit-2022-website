@@ -9,7 +9,6 @@
     z-index: 1;
     font-weight: 500;
     font-family: Oswald;
-
 }
 
 .imgslider{
@@ -28,7 +27,7 @@
     top: 75%;
     font-size: 4rem;
     z-index: 1;
-    left: 1.7em;
+    left: 12%;
 }
 
 .nit_silchar{
@@ -49,5 +48,112 @@
 .slick-slide img {
     margin: auto;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
+@media (max-width: 870px) {
+    .InterNIT{
+        font-size: 4.5rem;
+        font-weight: 100;
+    }
+    .nit_silchar{
+        font-size: 4.5rem;
+        font-weight: 300;
+    }
+    .TextForRotation{
+        font-size: 3rem;
+    }
+    
+}
+
+@media (max-width: 640px){
+    .slick-slide img{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 590px) {
+    .InterNIT{
+        font-size: 3.8rem;
+        font-weight: 100;
+    }
+    .nit_silchar{
+        font-size: 3.8rem;
+        font-weight: 100;
+    }
+    .TextForRotation{
+        font-size: 2.4rem;
+    }
+} 
+
+@media (max-width: 510px) {
+    .InterNIT{
+        font-size: 3.4rem;
+        font-weight: 100;
+    }
+    .nit_silchar{
+        font-size: 3.4rem;
+        font-weight: 100;
+    }
+    .TextForRotation{
+        font-size: 2.1rem;
+    }
+    .slick-slide img{
+        height: 36vh;
+    }
+}
+
+@media (max-width: 410px) {
+    .InterNIT{
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .nit_silchar{
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .TextForRotation{
+        font-size: 1.8rem;
+        top: 80%;
+    }
+    .slick-slide img{
+        height: 38vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .InterNIT{
+        font-size: 2.8rem;
+        font-weight: 100;
+    }
+    .nit_silchar{
+        font-size: 2.8rem;
+        font-weight: 100;
+    }
+    .TextForRotation{
+        font-size: 1.6rem;
+        top: 80%;
+    }
+    .slick-slide img{
+        height: 41vh;
+    }
+}
+
+@media (max-width: 340px) {
+    .InterNIT{
+        font-size: 2.6rem;
+        font-weight: 100;
+    }
+    .nit_silchar{
+        font-size: 2.6rem;
+        font-weight: 100;
+    }
+    .TextForRotation{
+        font-size: 1.45rem;
+        top: 85%;
+    }
+    .slick-slide img{
+        height: 44vh;
+    }
 }

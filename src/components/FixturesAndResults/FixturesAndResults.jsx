@@ -1,5 +1,6 @@
 import React from 'react'
 import ScoreCard from "../ScoreCard.jsx";
+import './fixturesAndResults.css'
 
 export default function FixturesAndResults() {
     return (
