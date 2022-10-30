@@ -12,6 +12,7 @@ import FixturesAndResults from './components/FixturesAndResults/FixturesAndResul
 import Stats from './components/Stats';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
+import AdminPage from './components/AdminPage';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <Route path='/stats' element={<Stats/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>
-
+      <Route path='/admin' element={<AdminPage/>}/>
     </Routes>
       </BrowserRouter>
       
@@ -34,3 +35,4 @@ function App() {
 }
 
 export default App;
+
