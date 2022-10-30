@@ -48,6 +48,11 @@ padding-bottom: 3rem;
 }
 .footer-link-btn{
     border-radius: 100%;
+
+}
+.footer-link-btn:hover{
+    transform: scale(0.8);
+    transition: 0.2s;
 }
 
 .icon-btn-1:hover{

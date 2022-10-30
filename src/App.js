@@ -12,6 +12,7 @@ import Far from './components/Far';
 import Stats from './components/Stats';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path='/team' element={<Team/>}/>
 
     </Routes>
+      <Footer/>    
       </BrowserRouter>
       
     </div>
