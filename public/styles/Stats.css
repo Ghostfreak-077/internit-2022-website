@@ -1,17 +1,4 @@
-.games-nav li{
-    font-size: 36px;
-    list-style: none;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 53px;
-    text-align: center;
-    cursor: pointer;
 
-    /* Dark Gray2 */
-    color: #878787;
-}
 
 .table-heading{
     align-items: center;
@@ -20,10 +7,6 @@
 
     /* Black */
     background: #010000;
-}
-
-.games-nav .container{
-    max-width: 900px;
 }
 
 .table-data{
@@ -38,17 +21,4 @@
 
 .table .darker-bg{
     background: #D6D6D6;
-}
-
-.stats-games-sel{
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 53px;
-    text-align: center;
-    text-decoration-line: underline;
-
-    /* Dark Blue */
-    color: #19204E !important;
 }

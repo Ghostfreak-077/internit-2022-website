@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import GameSelect from './GameSelect.js/GameSelect'
 
 const Stats = () => {
 
@@ -49,13 +50,7 @@ const Stats = () => {
     <div>
       <link rel="stylesheet" href="/styles/Stats.css" />
 
-      <div className="games-nav my-5">
-        <ul className="container px-5 d-flex">
-          <li className={`mx-auto ${statsGames==='badminton'?'stats-games-sel':''}`} onClick={()=>{setStatsGames('badminton')}} >Badminton</li>
-          <li className={`mx-auto ${statsGames==='chess'?'stats-games-sel':''}`} onClick={()=>{setStatsGames('chess')}} >Chess</li>
-          <li className={`mx-auto ${statsGames==='tt'?'stats-games-sel':''}`} onClick={()=>{setStatsGames('tt')}} >Table Tennis</li>
-        </ul>
-      </div>
+      <GameSelect statsGames={statsGames} setStatsGames={setStatsGames}/>
 
       <div className="table container my-5">
         <div className="table-heading bg-black text-light text-start d-flex">

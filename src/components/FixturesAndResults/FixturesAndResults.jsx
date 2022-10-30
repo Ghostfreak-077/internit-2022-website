@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import GameSelect from '../GameSelect.js/GameSelect.js';
 import ScoreCard from "../ScoreCard.jsx";
 import './fixturesAndResults.css'
 
@@ -47,6 +48,7 @@ export default function FixturesAndResults() {
     const [sport, setSport] = useState("Badminton");
     const [sortBy, setSortBy] = useState("Upcoming");
     const [click, setClick] = useState(0);
+    const [statsGames, setStatsGames] = useState('badminton')
 
     function handleClick(){
         if(sortBy==="Upcoming"){
@@ -59,13 +61,7 @@ export default function FixturesAndResults() {
 
     return (
         <div>
-            <div className="sport-categories">
-                <ul className="sport-cat-container">
-                    <li value="Badminton" onClick={() => setSport("Badminton")} className={sport==="Badminton" && "selected"}>BADMINTON</li>
-                    <li value="Chess" onClick={() => setSport("Chess")} className={sport==="Chess" && "selected"}>CHESS</li>
-                    <li value="Table Tennis" onClick={() => setSport("Table Tennis")} className={sport==="Table Tennis" && "selected"}>TABLE TENNIS</li>
-                </ul>
-            </div>
+            <GameSelect statsGames={statsGames} setStatsGames={setStatsGames}/>
             <div className="sort-cat">
                 <span className="sort-by">Sort by : </span>
                 <div className="dropdown">
