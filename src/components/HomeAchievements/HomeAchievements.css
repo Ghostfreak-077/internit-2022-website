@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.achievements-bg {
+  background-image: url("../../assets/images/Home/AchievementsBG.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 4rem;
+  height: 54.027777777vw;
+}
+.achievements-container {
+  max-width: 85%;
+}
+.achievements-heading {
+  color: #ffffff;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0.125rem;
+}

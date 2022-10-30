@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.home-words-heading {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+.home-words-container {
+  max-width: 85%;
+}
