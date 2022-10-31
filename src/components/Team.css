@@ -46,10 +46,13 @@
     height: 0rem;
     display: none;
 }
-.card-links ul{
+.card-btns ul{
     word-wrap: break-word;
-    text-align: left;
-    margin-right: 1rem;
+    text-align: center;
+    margin-right: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: 15rem;
 }
 
 .card-container:hover .card-links{

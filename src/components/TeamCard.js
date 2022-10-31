@@ -14,7 +14,7 @@ const Teamcard = () => {
                 </div>
                 <div className="card-links">
                     <div className="card-btns">
-                        <ul>Name Name</ul>
+                        <ul>Ankit Kumar  </ul>
                         <a href=""><AiFillLinkedin className="card-link-btn"size={30}/></a>
                         <a href=""><MdOutlineFacebook className="card-link-btn"size={30}/></a>
                         <a href=""><AiOutlineInstagram className="card-link-btn"size={30}/></a>
