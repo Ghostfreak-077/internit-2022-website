@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,900;1,500&display=swap');
+
+.Participate{
+    justify-content: center;
+    text-align: center;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.himang{
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-family: Oswald, sans-serif;
+}
+
+.imgHimang2{
+    width: 35%;
+    overflow: hidden;
+    height: auto;
+}
+
+@media (max-width: 810px){
+    .imgHimang2{
+        width: 40%;
+    }
+}
+
+@media (max-width: 540px){
+    .imgHimang2{
+        width: 50%;
+    }
+    .himang{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 440px){
+    .imgHimang2{
+        width: 68%;
+    }
+    .himang{
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 400px){
+    .imgHimang2{
+        width: 78%;
+    }
+    .himang{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 370px){
+    .imgHimang2{
+        width: 94%;
+    }
+    .himang{
+        font-size: 1.8rem;
+    }
+}
+
