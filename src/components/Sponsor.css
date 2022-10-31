@@ -1,5 +1,16 @@
 .spon-main{
     margin-top: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.spon-partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .title-spon h2{
     padding-bottom: 2rem;

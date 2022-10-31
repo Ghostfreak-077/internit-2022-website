@@ -18,7 +18,7 @@ const Footer = () => {
                         <h2>Address</h2>
                         <ul><a href="mailto:internit@gmail.com"><SiGmail size={20} className="footer-loc-btn"/>internit@gmail.com</a></ul>
                         <ul><a href="tel:+9147769573497"><BsFillTelephoneFill size={20} className="footer-loc-btn"/>+9147769573497</a></ul>
-                        <ul><MdLocationOn  size={25} className="footer-loc-btn"/>NIT Silchar, Assam</ul>
+                        <ul><MdLocationOn  size={25} className="footer-loc-btn"/>NIT Silchar,Cachar,Assam</ul>
                     </div>
                     <div className="footer-links">
                         <h2>Follow us on</h2>
