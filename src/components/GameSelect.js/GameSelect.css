@@ -31,3 +31,9 @@
     /* Dark Blue */
     color: #19204E !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .games-nav .container{
+        flex-direction: column;
+    }
+}

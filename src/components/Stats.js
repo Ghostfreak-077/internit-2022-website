@@ -56,8 +56,8 @@ const Stats = () => {
         <div className="table-heading bg-black text-light text-start d-flex">
           <div className="sno col-1"></div>
           <div className="team-name col-7">Team Name</div>
-          <div className="match-played col-2">Match Played</div>
-          <div className="wins col-2">No. of Wins</div>
+          <div className="match-played col-2">Played</div>
+          <div className="wins col-2">Wins</div>
         </div>
         {team_list.map((element) => {
 
