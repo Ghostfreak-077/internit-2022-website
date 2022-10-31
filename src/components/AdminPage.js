@@ -29,9 +29,10 @@ const Admin = () => {
                 <div className='HugMatch my-3'>
                     <p className='corresponding_ my-1'>Match Type</p>
                     <select className='Drop_down1 mx-4'>
-                        <option className='select_drop' id='51' value="Badminton">Badminton</option>
-                        <option className='select_drop'  id='52' value="Chess" required>Chess</option>
-                        <option className='select_drop' id='53' value="Table Tennis" required>Table Tennis</option>
+                        <option className='select_drop' id='51' value="Men's Single">Men's Single</option>
+                        <option className='select_drop' id='52' value="Men's Double" required>Men's Double</option>
+                        <option className='select_drop' id='53' value="Women's Single" required>Women's Single</option>
+                        <option className='select_drop' id='54' value="Women's Double" required>Women's Double</option>
                     </select>                    
                 </div>
                 <div className="form-group">
