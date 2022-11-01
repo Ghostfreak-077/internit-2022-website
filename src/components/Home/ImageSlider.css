@@ -63,16 +63,18 @@
 @media (max-width: 870px) {
     .InterNIT{
         font-size: 4.5rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .nit_silchar{
         font-size: 4.5rem;
-        font-weight: 300;
+        font-weight: 400;
     }
     .TextForRotation{
         font-size: 3rem;
     }
-    
+    .slick-slide img{
+        height: 35vh;
+    }
 }
 
 @media (max-width: 640px){
@@ -84,11 +86,11 @@
 @media (max-width: 590px) {
     .InterNIT{
         font-size: 3.8rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .nit_silchar{
         font-size: 3.8rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .TextForRotation{
         font-size: 2.4rem;
@@ -98,11 +100,11 @@
 @media (max-width: 510px) {
     .InterNIT{
         font-size: 3.4rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .nit_silchar{
         font-size: 3.4rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .TextForRotation{
         font-size: 2.1rem;
@@ -115,11 +117,11 @@
 @media (max-width: 410px) {
     .InterNIT{
         font-size: 3rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .nit_silchar{
         font-size: 3rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .TextForRotation{
         font-size: 1.8rem;
@@ -133,11 +135,11 @@
 @media (max-width: 380px) {
     .InterNIT{
         font-size: 2.8rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .nit_silchar{
         font-size: 2.8rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .TextForRotation{
         font-size: 1.6rem;
@@ -151,11 +153,11 @@
 @media (max-width: 340px) {
     .InterNIT{
         font-size: 2.6rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .nit_silchar{
         font-size: 2.6rem;
-        font-weight: 100;
+        font-weight: 400;
     }
     .TextForRotation{
         font-size: 1.45rem;

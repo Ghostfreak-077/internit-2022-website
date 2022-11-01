@@ -28,6 +28,7 @@ function App() {
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>
       <Route path='/admin' element={<AdminPage/>}/>
+      
     </Routes>
       <Footer/>
       </BrowserRouter>
