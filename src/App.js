@@ -13,6 +13,7 @@ import Stats from './components/Stats';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
 import AdminPage from './components/AdminPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Route path='/team' element={<Team/>}/>
       <Route path='/admin' element={<AdminPage/>}/>
     </Routes>
+      <Footer/>
       </BrowserRouter>
       
     </div>

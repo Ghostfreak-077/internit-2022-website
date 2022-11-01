@@ -44,7 +44,8 @@ export default class HomeAchievementsCard extends Component {
       <Slider {...settings}>
         {this.state.map((cardInfo) => {
           return (
-            <div>
+            <div className="position-relative">
+              <div className="pseudo">{cardInfo.banner===1?<>1<sup>st</sup> Position</>:cardInfo.banner===2?<>2<sup>nd</sup> Position</>:cardInfo.banner===3?<>3<sup>rd</sup> Position</>:''}</div>
               <img className="carousel-two-img" src={cardInfo.src} alt="" />
             </div>
           );

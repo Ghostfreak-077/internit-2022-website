@@ -1,3 +1,28 @@
 .carousel-two-img {
   transform: scale(0.95);
+  position: relative;
+}
+
+.slick-slide > .carousel-two-img::after{
+  /* position: absolute;
+  content: "1st position";
+  background: yellow;
+  width: 100%; 
+  height: 10px; */
+}
+
+.pseudo{
+  position: absolute;
+  width: 60%;
+  font-size: larger;
+  /* height: 10px; */
+  background: yellow;
+  top: 40px;
+  z-index: 1000;
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0.1em;
+  text-align: center;
 }

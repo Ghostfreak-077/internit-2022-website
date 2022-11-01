@@ -16,6 +16,14 @@
     overflow: hidden;
 }
 
+.slick-slide img::after{
+    position: absolute;
+    content: "1st position";
+    background: yellow;
+    width: 100%; 
+    height: 10px;
+}
+
 .sliderDiv{
     position: relative;
 }

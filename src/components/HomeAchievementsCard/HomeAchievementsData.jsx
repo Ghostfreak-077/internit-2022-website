@@ -6,18 +6,22 @@ const HomeAchievementsData = [
   {
     id: 1,
     src: `${Previous1}`,
+    banner: 1
   },
   {
     id: 2,
     src: `${Previous2}`,
+    banner: 2
   },
   {
     id: 3,
     src: `${Previous3}`,
+    banner: 2
   },
   {
     id: 4,
     src: `${Previous3}`,
+    banner: 1
   },
 ];
 

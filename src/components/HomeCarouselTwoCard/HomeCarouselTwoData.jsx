@@ -6,18 +6,22 @@ const HomeCarouselTwoData = [
   {
     id: 1,
     src: `${Previous1}`,
+    year: 2019
   },
   {
     id: 2,
     src: `${Previous2}`,
+    year: 2018
   },
   {
     id: 3,
     src: `${Previous3}`,
+    year: 2017
   },
   {
     id: 4,
     src: `${Previous3}`,
+    year: 2019
   },
 ];
 

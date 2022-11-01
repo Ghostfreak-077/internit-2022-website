@@ -1,9 +1,10 @@
 import React from 'react'
-import "./Sponsor.css"
+//  "/styles/Sponsor.css"
 
 const Sponsors = () => {
   return (
     <div>
+      <link rel="stylesheet" href="/styles/Sponsor.css" />
       <div className="spon-main">
         <div className="title-spon">
           <h2>TITLE SPONSOR</h2>

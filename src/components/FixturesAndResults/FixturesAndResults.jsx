@@ -71,7 +71,7 @@ export default function FixturesAndResults() {
                     </div>
                 </div>
             </div>
-            <div className="scores">
+            <div className="scores mb-5">
                 {dummyData.map((elem, i) => 
                 (<ScoreCard
                     key={i}

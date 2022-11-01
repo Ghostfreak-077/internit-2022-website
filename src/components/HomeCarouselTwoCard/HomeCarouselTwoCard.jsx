@@ -44,7 +44,8 @@ export default class HomeCarouselTwoCard extends Component {
       <Slider {...settings}>
         {this.state.map((cardInfo) => {
           return (
-            <div>
+            <div className="carousel-two-enclosure position-relative">
+              <div className="pseudo">{cardInfo.year}</div>
               <img className="carousel-two-img" src={cardInfo.src} alt="" />
             </div>
           );
