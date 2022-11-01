@@ -25,17 +25,19 @@ const Footer = () => {
                         <div className="footer-btns" >
                         <div className="footer-btn-respon">
 
-                        <a href="/"><button className="footer-link-btn"><AiFillLinkedin size={25} className="icon-btn-1"/></button></a>
-                        <a href="/"><button className="footer-link-btn"><AiFillTwitterCircle size={25} className="icon-btn-2"/></button></a>
-                        <a href="/"><button className="footer-link-btn"><MdOutlineFacebook size={25} className="icon-btn-3"/></button></a>
-                        <a href="/"><button className="footer-link-btn"><AiOutlineInstagram size={25} className="icon-btn-4"/></button></a>
+                        <a href="/"><AiFillLinkedin size={30} className="icon-btn-1"/></a>
+                        <a href="/"><AiFillTwitterCircle size={30} className="icon-btn-2"/></a>
+                        <a href="/"><MdOutlineFacebook size={30} className="icon-btn-3"/></a>
+                        <a href="/"><AiOutlineInstagram size={30} className="icon-btn-4"/></a>
                         </div>
                         </div>
                     </div>
 
                 </div>
                 <div className="footer-right">
-                    <h2>Map</h2>
+                   <div className="map">
+                     <h2>Map</h2>
+                    </div>
                     <section><iframe title="mymap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.1030424793535!2d92.79115564073894!3d24.757655927802585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374e49dcb63bae9b%3A0x81efa836714a289b!2sNational%20Institute%20Of%20Technology%2C%20Silchar!5e0!3m2!1sen!2sin!4v1666801726860!5m2!1sen!2sin" width="350" height="250" center ="24.757802068498105, 92.79240018573046" style={{ border:0 }}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
 
                 </div>

@@ -6,16 +6,54 @@ const Team = () => {
       <div className='team-container'>
       <div className="team-main">
         <h2>GENERAL OBSERVER</h2>
-        <Teamcard/>
+        <Teamcard
+        designation="Designation"
+        name="Name"
+        fb=""
+        linkedin=""
+        ig=""/>
       </div>
-        <h2 style={{marginTop:'1rem'}}>TEAM HEADS</h2>
+        <div>
+          <h2 style={{marginTop:'2rem',display:'flex',justifyContent:'center'}}>TEAM HEADS</h2>
+        </div>
       <div className="team-main-2">
-        <Teamcard/>
-        <Teamcard/>
-        <Teamcard/>
-        <Teamcard/>
-        <Teamcard/>
-        <Teamcard/>
+        <Teamcard
+        designation="Designation"
+        name="Name"
+        fb=""
+        linkedin=""
+        ig=""/>
+        <Teamcard
+        designation="Designation"
+        name="Name"
+        fb=""
+        linkedin=""
+        ig=""/>
+        <Teamcard
+        designation="Designation"
+        name="Name"
+        fb=""
+        linkedin=""
+        ig=""/>
+        <Teamcard
+        designation="Designation"
+        name="Name"
+        fb=""
+        linkedin=""
+        ig=""/>
+        <Teamcard
+        designation="Designation"
+        name="Name"
+        fb=""
+        linkedin=""
+        ig=""/>
+        <Teamcard
+        designation="Designation"
+        name="Name"
+        fb=""
+        linkedin=""
+        ig=""/>
+        
 
       </div>
       <div/>
