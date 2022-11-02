@@ -14,6 +14,7 @@
     background-size: cover;
     display: flex;
     flex-direction: row;
+    background-attachment: fixed;
 }
 
 .Director_Sir_Img{

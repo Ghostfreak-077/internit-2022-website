@@ -14,16 +14,19 @@ import Sponsors from './components/Sponsors';
 import Team from './components/Team';
 import AdminPage from './components/AdminPage';
 import Footer from './components/Footer/Footer';
+import Leaderboard from './components/Leaderboard';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <NavBars/>
+      <div className="py-4"> </div>
     <Routes>
 
       <Route path='/' element={<Home/>}/>
       <Route path='/far' element={<FixturesAndResults/>}/>
+      <Route path='/leaderboard' element={<Leaderboard/>}/>
       <Route path='/stats' element={<Stats/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>

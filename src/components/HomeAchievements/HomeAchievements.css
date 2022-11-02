@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   padding: 4rem;
   height: 54.027777777vw;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .achievements-container {
   max-width: 85%;

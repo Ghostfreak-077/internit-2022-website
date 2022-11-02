@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import HomeAchievementsData from "./HomeAchievementsData";
 
 import "./HomeAchievementsCard.css";
+import Cards from "../Cards/Cards";
 export default class HomeAchievementsCard extends Component {
   render() {
     this.state = HomeAchievementsData;
@@ -44,9 +45,8 @@ export default class HomeAchievementsCard extends Component {
       <Slider {...settings}>
         {this.state.map((cardInfo) => {
           return (
-            <div className="position-relative">
-              <div className="pseudo">{cardInfo.banner===1?<>1<sup>st</sup> Position</>:cardInfo.banner===2?<>2<sup>nd</sup> Position</>:cardInfo.banner===3?<>3<sup>rd</sup> Position</>:''}</div>
-              <img className="carousel-two-img" src={cardInfo.src} alt="" />
+            <div className="position-relative m-3">
+              <Cards banner={cardInfo.banner} img={cardInfo.src} name={cardInfo.name} pya={true} pyp={false}/>
             </div>
           );
         })}

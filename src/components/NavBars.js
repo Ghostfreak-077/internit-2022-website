@@ -1,11 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const NavBars = () => {
+
+  const location = useLocation()
+  // console.log(location);
+
   return (
     <div>
       <div className="upper-nav"></div>
-      
+      <link rel="stylesheet" href="/styles/Navbar.css" />
       
       <div className="main-nav">
       <nav class="navbar navbar-expand-lg bg-light">
@@ -15,23 +19,28 @@ const NavBars = () => {
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-5 mb-2 mb-lg-0 ms-auto">
+      <ul class="navbar-nav me-5 text-dark mb-2 mb-lg-0 ms-auto">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link class={`nav-link ${location.pathname === '/'?'nav-sel':''}`} aria-current="page" to="/">Home</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="far">Fixtures & Results</Link>
+          <Link class={`nav-link ${location.pathname === '/far'?'nav-sel':''}`} to="far">Fixtures & Results</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="stats">
+          <Link class={`nav-link ${location.pathname === '/leaderboard'?'nav-sel':''}`} to="leaderboard">
+            Leaderboard
+          </Link>
+        </li>
+        <li class="nav-item">
+          <Link class={`nav-link ${location.pathname === '/stats'?'nav-sel':''}`} to="stats">
             Stats
           </Link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href='#'>Rules & Guidelines</a>
         </li>
-        <li className='nav-item'><Link className='nav-link' to='sponsors'>Sponsors</Link></li>
-        <li className='nav-item'><Link className='nav-link' to='team'>Team</Link></li>
+        <li className='nav-item'><Link className={`nav-link ${location.pathname === '/sponsors'?'nav-sel':''}`} to='sponsors'>Sponsors</Link></li>
+        <li className='nav-item'><Link className={`nav-link ${location.pathname === '/team'?'nav-sel':''}`} to='team'>Team</Link></li>
       </ul>
     </div>
   </div>

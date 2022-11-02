@@ -1,0 +1,39 @@
+.carousel-two-img .game{
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 36px;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background: #0006;
+    width: 100%;
+    padding: 20px 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.carousel-two-img:hover .game{
+    opacity: 1;
+}
+
+.infos{
+    width: 100%;
+    position: absolute;
+    background: black;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.infos .name{
+    font-size: 36px;
+    margin: 1rem;
+}
+
+.carousel-two-img:hover .infos{
+    transform: translateY(0px);
+}

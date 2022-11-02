@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import HomeCarouselTwoData from "./HomeCarouselTwoData";
 
 import "./HomeCarouselTwoCard.css";
+import Cards from "../Cards/Cards";
 export default class HomeCarouselTwoCard extends Component {
   render() {
     this.state = HomeCarouselTwoData;
@@ -44,10 +45,7 @@ export default class HomeCarouselTwoCard extends Component {
       <Slider {...settings}>
         {this.state.map((cardInfo) => {
           return (
-            <div className="carousel-two-enclosure position-relative">
-              <div className="pseudo">{cardInfo.year}</div>
-              <img className="carousel-two-img" src={cardInfo.src} alt="" />
-            </div>
+            <Cards banner={cardInfo.year} img={cardInfo.src} pya={false} game={cardInfo.game} pyp={true}/>
           );
         })}
       </Slider>

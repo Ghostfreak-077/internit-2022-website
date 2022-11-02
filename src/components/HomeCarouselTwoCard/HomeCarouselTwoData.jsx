@@ -6,12 +6,14 @@ const HomeCarouselTwoData = [
   {
     id: 1,
     src: `${Previous1}`,
-    year: 2019
+    year: 2019,
+    game:"Badminton"
   },
   {
     id: 2,
     src: `${Previous2}`,
-    year: 2018
+    year: 2018,
+    game: "Table tenis"
   },
   {
     id: 3,
