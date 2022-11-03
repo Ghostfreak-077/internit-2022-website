@@ -11,3 +11,9 @@
 .home-upcoming-container {
   max-width: 85%;
 }
+
+@media (max-width: 460px){
+  .home-upcoming-heading{
+    font-size: 2.2rem;
+  }
+}

@@ -11,9 +11,14 @@
     font-family: Oswald;
 }
 
+.slide{
+    margin-bottom: 4.5vh;
+}
+
 .slick-slide img{
     width: 100%;
     transition: 0.5s;
+    object-fit: cover;
 }
 
 .slick-slide{
@@ -27,6 +32,7 @@
 .imgslider{
     position: relative;
     overflow: hidden;
+    margin-bottom: none;
 }
 
 .slick-slide img::after{
@@ -49,6 +55,7 @@
     font-size: 4rem;
     z-index: 1;
     left: 12%;
+    font-weight: 500;
 }
 
 .nit_silchar{
@@ -81,51 +88,75 @@
 @media (max-width: 870px) {
     .InterNIT{
         font-size: 4.5rem;
-        font-weight: 400;
+        font-weight: 600;
     }
     .nit_silchar{
         font-size: 4.5rem;
-        font-weight: 400;
+        font-weight: 600;
     }
     .TextForRotation{
         font-size: 3rem;
+        font-weight: 500;
     }
     .slick-slide img{
-        height: 35vh;
+        height: 48vh;
     }
 }
 
 @media (max-width: 640px){
     .slick-slide img{
-        height: 30vh;
+        height: 42vh;        
+    }
+    .InterNIT{
+        font-size: 3.8rem;
+        font-weight: 500;
+        right: 18px;
+    }
+    .nit_silchar{
+        font-size: 3.8rem;
+        font-weight: 500;
+        right: 18px;
+    }
+    .TextForRotation{
+        font-size: 2.4rem;
+        left: 28px;
+        font-weight: 500;
     }
 }
 
 @media (max-width: 590px) {
     .InterNIT{
         font-size: 3.8rem;
-        font-weight: 400;
+        font-weight: 500;
+        right: 18px;
     }
     .nit_silchar{
         font-size: 3.8rem;
-        font-weight: 400;
+        font-weight: 500;
+        right: 18px;
     }
     .TextForRotation{
         font-size: 2.4rem;
+        left: 28px;
+        font-weight: 500;
     }
 } 
 
 @media (max-width: 510px) {
     .InterNIT{
         font-size: 3.4rem;
-        font-weight: 400;
+        font-weight: 500;
+        right: 16px;
     }
     .nit_silchar{
         font-size: 3.4rem;
-        font-weight: 400;
+        font-weight: 500;
+        right: 16px;
     }
     .TextForRotation{
         font-size: 2.1rem;
+        right: 24px;
+        font-weight: 500;
     }
     .slick-slide img{
         height: 36vh;
@@ -135,15 +166,16 @@
 @media (max-width: 410px) {
     .InterNIT{
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 500;
     }
     .nit_silchar{
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 500;
     }
     .TextForRotation{
         font-size: 1.8rem;
         top: 80%;
+        font-weight: 500;
     }
     .slick-slide img{
         height: 38vh;
@@ -153,15 +185,16 @@
 @media (max-width: 380px) {
     .InterNIT{
         font-size: 2.8rem;
-        font-weight: 400;
+        font-weight: 500;
     }
     .nit_silchar{
         font-size: 2.8rem;
-        font-weight: 400;
+        font-weight: 500;
     }
     .TextForRotation{
         font-size: 1.6rem;
         top: 80%;
+        font-weight: 500;
     }
     .slick-slide img{
         height: 41vh;
@@ -171,15 +204,18 @@
 @media (max-width: 340px) {
     .InterNIT{
         font-size: 2.6rem;
-        font-weight: 400;
+        font-weight: 500;
+        top: 4%;
     }
     .nit_silchar{
         font-size: 2.6rem;
-        font-weight: 400;
+        font-weight: 500;
+        top: 16%;
     }
     .TextForRotation{
         font-size: 1.45rem;
         top: 85%;
+        font-weight: 500;
     }
     .slick-slide img{
         height: 44vh;

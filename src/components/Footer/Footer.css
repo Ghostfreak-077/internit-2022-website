@@ -80,6 +80,9 @@ color: #983d3b;
     margin-right: 1rem;
 }
 
+.footer-right iframe{
+    overflow: hidden;
+} 
 
 
 @media only screen and (max-width: 890px){

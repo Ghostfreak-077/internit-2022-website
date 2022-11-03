@@ -23,3 +23,9 @@
   padding: 1rem;
   z-index: 1;
 }
+
+@media (max-width: 470px){
+  .upcoming-image-title{
+    font-size: 1.5rem;
+  }
+}

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import HomeWordsData from "./HomeWordsData";
-
 import "./HomeWords.css";
 
 class HomeWords extends Component {

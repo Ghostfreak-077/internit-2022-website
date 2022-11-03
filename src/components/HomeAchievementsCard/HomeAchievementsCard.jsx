@@ -45,7 +45,7 @@ export default class HomeAchievementsCard extends Component {
       <Slider {...settings}>
         {this.state.map((cardInfo) => {
           return (
-            <div className="position-relative m-3">
+            <div className="position-relative">
               <Cards banner={cardInfo.banner} img={cardInfo.src} name={cardInfo.name} pya={true} pyp={false}/>
             </div>
           );

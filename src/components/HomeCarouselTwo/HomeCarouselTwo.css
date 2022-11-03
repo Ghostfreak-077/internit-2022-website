@@ -1,15 +1,44 @@
 .carousel-two-bg {
-  background: #e1e1e1;
+  background-color: #e1e1e1;
 }
 .carousel-two-container {
-  padding: 3rem;
+  padding: 0.3rem;
   max-width: 85%;
 }
 .carousel-two-heading {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 3rem;
+  user-select: none;
+  -webkit-user-select: none;
   text-transform: uppercase;
   color: #000000;
   margin: 1rem 0rem;
+}
+
+@media (max-width: 619px){
+  .carousel-two-heading{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 418px){
+  .carousel-two-heading{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 378px){
+  .carousel-two-heading{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 336px){
+  .carousel-two-container{
+    justify-content: center;
+    text-align: center;
+  }
+  /* .carousel-two-heading{
+  } */
 }

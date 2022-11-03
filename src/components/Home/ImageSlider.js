@@ -21,7 +21,7 @@ const ImageSlider = ({images}) => {
         <div className="imgslider">
             <h1 className="InterNIT">INTER NIT 2022</h1> 
             <h1 className="nit_silchar">NIT SILCHAR</h1>
-            <Slider className="slide mb-5" {...settings}>
+            <Slider className="slide" {...settings}>
                 {
                     images.map((item) => (
                         <div className="sliderDiv" key={item.id}>

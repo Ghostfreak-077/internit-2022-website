@@ -3,13 +3,13 @@
   position: relative;
 }
 
-.slick-slide > .carousel-two-img::after{
-  /* position: absolute;
+/* .slick-slide > .carousel-two-img::after{
+  position: absolute;
   content: "1st position";
   background: yellow;
   width: 100%; 
-  height: 10px; */
-}
+  height: 10px;
+} */
 
 .pseudo{
   position: absolute;

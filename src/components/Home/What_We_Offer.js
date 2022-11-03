@@ -6,7 +6,7 @@ import TT_Vector from './Assets_Images/TT_Vector.png'
 
 export default function What_We_Offer(){
     return(
-        <div className='Parent_DIVw my-4 mx-5'>
+        <div className='Parent_DIVw mx-5'>
             <p className='ourFeatures'>OUR FEATURES</p>
             <p className='whatWeOffer mb-4'>WHAT WE OFFER</p>
                 <div className='flex-container'>
