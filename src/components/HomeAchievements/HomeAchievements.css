@@ -9,9 +9,7 @@
   background-attachment: fixed;
   background-size: cover;
 }
-.achievements-container {
-  max-width: 85%;
-}
+
 .achievements-heading {
   color: #ffffff;
   font-family: "Oswald";
@@ -19,4 +17,5 @@
   font-weight: 700;
   font-size: 3rem;
   margin: 0.125rem;
+  overflow: hidden;
 }

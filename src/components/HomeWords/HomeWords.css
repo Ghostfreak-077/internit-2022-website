@@ -90,7 +90,7 @@
   font-family: "Oswald";
   font-size: 1.5rem;
   font-weight: 500;
-  color: #888;
+  color: #878787;
 }
 
 @media (max-width: 430px){
@@ -121,7 +121,33 @@
   .home-words-content-words{
     font-size: 0.9rem;
     color: #878787;
-    line-height: 24px;
+    line-height: 25px;
+    font-weight: 500;
+    padding: 0;
+  }
+}
+
+@media (max-width: 490px){
+  .home-words-content-img{
+    width: 48vw;
+  }
+  .home-word-content-words{
+    font-size: 1.2rem;
+  }
+  .home-words-content-person-desg{
+    font-size: 1.5rem;
+  }
+  .home-words-content-person-desk{
+    font-size: 1.5rem;
+  }
+  .home-words-content-person-name{
+    font-size: 1.5rem;
+  }
+  .home-words-content-words{
+    font-size: 1rem;
+    color: #878787;
+    line-height: 25px;
+    font-weight: 500;
     padding: 0;
   }
 }
