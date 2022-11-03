@@ -61,26 +61,49 @@
     }
     .inside{
         width: 18em;
-        height: auto;
+        height: 26em;
     }
 }
 
 @media (max-width: 346px){
     .ourFeatures{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        font-weight: 500;
     }
     .whatWeOffer{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     .Round_Vec{
         width: 38vw;
     }
     .WriteList{
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 500;
     }
     .inside{
         width: 18em;
-        height: 22em;
+        height: 24em;
+    }
+}
+
+@media (max-width: 322px){
+    .ourFeatures{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .whatWeOffer{
+        font-size: 2rem;
+    }
+    .Round_Vec{
+        width: 38vw;
+    }
+    .WriteList{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .inside{
+        width: 18em;
+        height: 29em;
     }
 }
 
