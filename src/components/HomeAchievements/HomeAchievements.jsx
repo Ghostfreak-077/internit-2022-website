@@ -7,7 +7,7 @@ function HomeAchievements() {
     <div className="achievements-bg container-fluid">
       <div className="achievements-container container">
         <h2 className="achievements-heading">Previous Year</h2>
-        <h2 className="achievements-heading mb-5">Achievements</h2>
+        <h2 className="achievements-heading mb-5 sm:fs-1">Achievements</h2>
         <HomeAchievementsCard />
       </div>
     </div>

@@ -4,7 +4,7 @@
   background-image: url("../../assets/images/Home/AchievementsBG.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 4rem;
+  padding: 2rem;
   /* height: 54.027777777vw; */
   background-attachment: fixed;
   background-size: cover;
@@ -18,4 +18,10 @@
   font-size: 3rem;
   margin: 0.125rem;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .achievements-heading {
+    font-size: 2rem;
+  }
 }
