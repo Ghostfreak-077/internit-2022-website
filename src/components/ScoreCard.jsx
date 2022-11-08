@@ -2,8 +2,8 @@ import React from 'react'
 
 const ScoreCard = ({data}) => {
   return (
-    <div className="score-container" style={{borderTop: `1px solid ${data.status==="Upcoming"?"red":"gray"}`}}>
-        <span className="match-title">Match 1 - Completed</span>
+    <div className="score-container" style={{borderTop: `1px solid ${data.completed==="Upcoming"?"red":"gray"}`}}>
+        <span className="match-title" style={{backgroundColor: `${data.completed==="upcoming"?"#878787":"#e73725"}`}}>Match 1 - {data.completed}</span>
         <div className="match-details">
             <span className="match-time">
                 Time :- {data.time}
@@ -17,13 +17,13 @@ const ScoreCard = ({data}) => {
         </div>
         <div className="score-box">
             <div className="score">
-                {data.team1score}
+                {data.completed === 'completed'? data.team1Point:''}
             </div>
             <div className="vs">
                 - VS -
             </div>
             <div className="score">
-                {data.team2score}
+                {data.completed === 'completed'? data.team2Point:''}
             </div>
         </div>
         <div className="team2">
@@ -31,7 +31,7 @@ const ScoreCard = ({data}) => {
             <span className="team-name2">{data.team2}</span>         
         </div>
         <div className="add-info">
-            {data.addInfo}
+            {data.matchType}
         </div>
     </div>
   )

@@ -41,6 +41,7 @@ const NavBars = () => {
         </li>
         <li className='nav-item'><Link className={`nav-link ${location.pathname === '/sponsors'?'nav-sel':''}`} to='sponsors'>Sponsors</Link></li>
         <li className='nav-item'><Link className={`nav-link ${location.pathname === '/team'?'nav-sel':''}`} to='team'>Team</Link></li>
+        {/* <li className='nav-item'><Link className={`nav-link ${location.pathname === '/admin'?'nav-sel':''}`} to='admin'>Admin</Link></li> */}
       </ul>
     </div>
   </div>

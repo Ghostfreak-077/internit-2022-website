@@ -1,0 +1,26 @@
+.table .gold svg, .table .silver svg, .table .bronze svg{
+    width: 40px;
+    height: 25px;
+    padding: 0px;
+}
+
+.table-data .btns{
+    right: 10px;
+    visibility: hidden;
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.table-data .btns .edit, .delete{
+    cursor: pointer;
+}
+
+.table-data .btns svg{
+    width: 25px;
+    height: 25px;
+}
+
+.table-data:hover .btns, .btns:hover{
+    visibility: visible;
+    opacity: 1;
+}
