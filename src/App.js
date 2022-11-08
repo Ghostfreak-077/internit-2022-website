@@ -15,8 +15,13 @@ import Team from './components/Team';
 import AdminPage from './components/AdminPage';
 import Footer from './components/Footer/Footer';
 import Leaderboard from './components/Leaderboard';
+import Login from './components/Login';
+import { useState } from 'react';
 
 function App() {
+
+const [logged, setLogged] = useState('defined')
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -26,11 +31,12 @@ function App() {
 
       <Route path='/' element={<Home/>}/>
       <Route path='/far' element={<FixturesAndResults/>}/>
-      <Route path='/leaderboard' element={<Leaderboard/>}/>
-      <Route path='/stats' element={<Stats/>}/>
+      <Route path='/leaderboard' element={<Leaderboard logged={logged} setLogged={setLogged}/>}/>
+      <Route path='/stats' element={<Stats logged={logged} setLogged={setLogged}/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>
-      <Route path='/admin' element={<AdminPage/>}/>
+      <Route path='/admin' element={<AdminPage setLogged={setLogged} logged={logged}/>}/>
+      <Route path='/login' element={<Login setLogged={setLogged} logged={logged}/>}/>
       
     </Routes>
       <Footer/>

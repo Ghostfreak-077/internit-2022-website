@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import GameSelect from './GameSelect.js/GameSelect'
+import axios from 'axios'
+import { TiDelete } from 'react-icons/ti'
+import { AiTwotoneEdit } from 'react-icons/ai'
+import './Leaderboard.css'
 
-const Stats = () => {
+const Stats = (props) => {
 
   const [statsGames, setStatsGames] = useState('badminton')
+  const { logged, setLogged } = props
+  const [editing, setEditing] = useState('done')
 
   const team_list = [
     {
@@ -46,27 +52,48 @@ const Stats = () => {
 
   ]
 
+  const [post, setPost] = useState({ teams: [] })
+  const url = 'http://localhost:5000/api/admin/teams'
+
+  useEffect(() => {
+    axios.get(url).then(async (res) => {
+      await setPost(res.data)
+      console.log(post);
+    })
+  }, [])
+
   return (
     <div>
       <link rel="stylesheet" href="/styles/Stats.css" />
 
-      <GameSelect statsGames={statsGames} setStatsGames={setStatsGames}/>
+      <GameSelect statsGames={statsGames} setStatsGames={setStatsGames} />
 
       <div className="table container my-5">
         <div className="table-heading bg-black text-light text-start d-flex">
           <div className="sno col-1"></div>
-          <div className="team-name col-7">Team Name</div>
-          <div className="match-played col-2">Played</div>
-          <div className="wins col-2">Wins</div>
+          <div className={`team-name ${logged === 'admi' ? 'col-md-7' : 'col-md-8'}`}>Team Name</div>
+          <div className={`match-played ${logged === 'dmin' ? 'col-md-1' : 'col-md-2'}`}>Played</div>
+          <div className={`wins ${logged === 'dmin' ? 'col-md-1' : 'col-md-2'}`}>Wins</div>
+          {/* <div className="wins col-2 text-dark">{logged}</div> */}
         </div>
-        {team_list.map((element) => {
+        {post.teams.map((element,i) => {
 
           return (
-            <div className={`table-data d-flex text-start ${element.sno%2!==0?'lighter-bg':'darker-bg'}`}>
-              <div className="sno col-1 text-center">{element.sno}</div>
-              <div className="team-name col-7">{element.team}</div>
-              <div className="match-played ps-3 col-2">{element.mp}</div>
-              <div className="wins col-2 ps-3">{element.now}</div>
+            <div key={element._id} className={`d-flex flex-column ${i % 2 === 0 ? 'lighter-bg' : 'darker-bg'}`}>
+            <div className={`table-data d-flex text-start`}>
+              <div className="sno col-1 text-center">{i+1}</div>
+              <div className={`team-name d-flex position-relative ${logged === 'adin' ? 'col-md-7' : 'col-md-8'}`}>
+                {element.teamName}
+                {logged==='admin'?<div className="btns d-flex p-0 ms-5 position-absolute">
+                  <div className="edit text-success me-3" onClick={()=>{setEditing(element._id)}}><AiTwotoneEdit /></div>
+                  <div className="delete text-danger me-3"><TiDelete /></div>
+                </div>:''}
+              </div>
+              <div className={`match-played m-auto  ps-3 ${logged === 'adin' ? 'col-md-1' : 'col-md-2'}`}>{element.gamePlayed}</div>
+              <div className={`wins ps-3 ${logged === 'amin' ? 'col-md-1' : 'col-md-2'}`}>{element.wins}</div>
+            </div>
+            {editing===element._id?<div className="btn btn-primary mx-auto done" onClick={()=>{setEditing('done')}}>Done</div>:''}
+            {/* {editing==='edit'?'hello':''} */}
             </div>
           )
         })}

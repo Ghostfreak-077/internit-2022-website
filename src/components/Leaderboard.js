@@ -1,4 +1,12 @@
 import React from 'react'
+import axios from 'axios'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import {RiMedalFill} from 'react-icons/ri'
+import './Leaderboard.css'
+import GameSelect from './GameSelect.js/GameSelect'
+import { AiTwotoneEdit } from 'react-icons/ai'
+import { TiDelete } from 'react-icons/ti'
 
 const Leaderboard = () => {
     const team_list = [
@@ -46,28 +54,56 @@ const Leaderboard = () => {
         },
     
       ]
+
+      const [post, setPost] = useState({teams:[]})
+      const url = 'http://localhost:5000/api/admin/teams'
+      const [statsGames, setStatsGames] = useState('badminton')
+      const [editing, setEditing] = useState('done')
+
+      useEffect(()=>{
+        axios.get(url).then(async (res)=>{
+          await setPost(res.data)
+          console.log(post);
+        })
+      },[])
     
       return (
         <div>
           <link rel="stylesheet" href="/styles/Stats.css" />
+
+          {/* {post.teams.map((element)=>{
+            return (<>
+              {element.teamName}
+            </>)
+          })} */}
+
+          {/* <GameSelect statsGames={statsGames} setStatsGames={setStatsGames}/> */}
     
           <div className="table container my-5">
             <div className="table-heading bg-black text-light text-start d-flex">
               <div className="sno col-1"></div>
               <div className="team-name col-7">Team Name</div>
-              <div className="match-played col-1">Gold</div>
-              <div className="match-played col-1">Silver</div>
-              <div className="wins col-1">Bronze</div>
+              <div className="gold col-1" style={{color: '#FFD700'}}><RiMedalFill/></div>
+              <div className="silver col-1" style={{color: '#A9A9A9'}}><RiMedalFill/></div>
+              <div className="bronze col-1" style={{color: '#A0522D'}}><RiMedalFill/></div>
+              <div className="wins col-1">Total</div>
             </div>
-            {team_list.map((element) => {
+            {post.teams.map((element) => {
     
               return (
-                <div className={`table-data d-flex text-start ${element.sno%2!==0?'lighter-bg':'darker-bg'}`}>
-                  <div className="sno col-1 text-center">{element.sno}</div>
-                  <div className="team-name col-7">{element.team}</div>
+                <div className={`table-data d-flex text-start ${element.teamId%2!==0?'lighter-bg':'darker-bg'}`}>
+                  <div className="sno col-1 text-center">{element.teamId}</div>
+                  <div className="team-name col-7 d-flex position-relative">
+                    <div className="text">{element.teamName}</div>
+                    <div className="btns d-flex ms-5 position-absolute">
+                      <div className="edit text-success me-3" onClick={(e)=>{setEditing(element._id)}}><AiTwotoneEdit/></div>
+                      <div className="delete text-danger me-3"><TiDelete/></div>  
+                    </div>
+                  </div>
                   <div className="match-played ps-3 col-1">{element.gold}</div>
                   <div className="match-played ps-3 col-1">{element.silver}</div>
                   <div className="wins col-1 ps-3">{element.bronze}</div>
+                  <div className="wins col-1 ps-3">{element.gold + element.silver + element.bronze}</div>
                 </div>
               )
             })}
