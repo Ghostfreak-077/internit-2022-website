@@ -21,6 +21,7 @@ import { useState } from 'react';
 function App() {
 
 const [logged, setLogged] = useState('defined')
+const [token, setToken] = useState('')
 
   return (
     <div className="App">
@@ -31,12 +32,12 @@ const [logged, setLogged] = useState('defined')
 
       <Route path='/' element={<Home/>}/>
       <Route path='/far' element={<FixturesAndResults/>}/>
-      <Route path='/leaderboard' element={<Leaderboard logged={logged} setLogged={setLogged}/>}/>
-      <Route path='/stats' element={<Stats logged={logged} setLogged={setLogged}/>}/>
+      <Route path='/leaderboard' element={<Leaderboard token={token} setToken={setToken} logged={logged} setLogged={setLogged}/>}/>
+      <Route path='/stats' element={<Stats logged={logged} token={token} setToken={setToken} setLogged={setLogged}/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>
-      <Route path='/admin' element={<AdminPage setLogged={setLogged} logged={logged}/>}/>
-      <Route path='/login' element={<Login setLogged={setLogged} logged={logged}/>}/>
+      <Route path='/admin' element={<AdminPage setLogged={setLogged} logged={logged} setToken={setToken} token={token}/>}/>
+      <Route path='/login' element={<Login setLogged={setLogged} logged={logged} />}/>
       
     </Routes>
       <Footer/>

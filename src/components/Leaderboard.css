@@ -15,6 +15,14 @@
     cursor: pointer;
 }
 
+.table-data input{
+    background: whitesmoke;
+}
+
+.table-data input[type="text"]{
+    width: 100%;
+}
+
 .table-data .btns svg{
     width: 25px;
     height: 25px;
@@ -23,4 +31,8 @@
 .table-data:hover .btns, .btns:hover{
     visibility: visible;
     opacity: 1;
+}
+
+.table-data{
+    overflow: hidden;
 }

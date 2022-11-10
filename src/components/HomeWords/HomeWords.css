@@ -54,6 +54,8 @@
   letter-spacing: 0em;
   text-align: left;
   padding: 0px 2rem;
+  margin-top: 3rem;
+  margin-bottom: auto;
 }
 .home-words-content-person-desk {
   text-align: center;
@@ -71,7 +73,7 @@
 .home-words-content-person-desk {
   text-align: center;
   font-family: "Oswald";
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   color: #333;
 }

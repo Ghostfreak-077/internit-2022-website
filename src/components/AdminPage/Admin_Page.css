@@ -8,6 +8,34 @@
     font-family: Oswald, sans-serif;
 }
 
+.backdrop{
+    position: fixed !important;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: #00000047;
+}
+
+.login{
+    width: 500px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.login input{
+    width: 230px;
+    margin: 0.9rem auto;
+    height: 35px;
+}
+
 .form-group{
     display: flex;
     justify-content: center;
@@ -82,7 +110,11 @@
 }
 
 
-
+.login-btn{
+    width: 60px;
+    margin: auto;
+    margin-top: 2rem;
+}
 
 
 /* <div class="dropdown mb-4">

@@ -27,6 +27,9 @@ const NavBars = () => {
           <Link class={`nav-link ${location.pathname === '/far'?'nav-sel':''}`} to="far">Fixtures & Results</Link>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href='#'>Rules & Guidelines</a>
+        </li>
+        <li class="nav-item">
           <Link class={`nav-link ${location.pathname === '/leaderboard'?'nav-sel':''}`} to="leaderboard">
             Leaderboard
           </Link>
@@ -36,11 +39,8 @@ const NavBars = () => {
             Stats
           </Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>Rules & Guidelines</a>
-        </li>
-        <li className='nav-item'><Link className={`nav-link ${location.pathname === '/sponsors'?'nav-sel':''}`} to='sponsors'>Sponsors</Link></li>
-        <li className='nav-item'><Link className={`nav-link ${location.pathname === '/team'?'nav-sel':''}`} to='team'>Team</Link></li>
+        {/* <li className='nav-item'><Link className={`nav-link ${location.pathname === '/sponsors'?'nav-sel':''}`} to='sponsors'>Sponsors</Link></li>
+        <li className='nav-item'><Link className={`nav-link ${location.pathname === '/team'?'nav-sel':''}`} to='team'>Team</Link></li> */}
         {/* <li className='nav-item'><Link className={`nav-link ${location.pathname === '/admin'?'nav-sel':''}`} to='admin'>Admin</Link></li> */}
       </ul>
     </div>

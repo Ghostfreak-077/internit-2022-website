@@ -9,10 +9,14 @@ export default function About_Inter_Nit(){
             <div className='first_Writing'>
                 <h3 className='Want_to mt-5 mb-4'>WANT TO KNOW MORE?</h3>
                 <h1 className='About_Inter_Nit pt-2 mb-5'>ABOUT INTER NIT</h1>
-                <p className='Long_Para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit bibendum nec amet urna blandit. Quis a tempor, arcu, in sed. Ac diam id tortor aliquet lacus. Mattis sodales eu mus volutpat ultrices gravida.
-                            Pretium nec, egestas vitae vitae quam sed gravida quam sit. Placerat consectetur faucibus aliquet dui, dictum mattis. Nunc, placerat aliquet non quis donec velit. Sed suscipit sagittis lacinia tristique amet mauris luctus. Id adipiscing lacus commodo integer vestibulum leo. Dictum tellus laoreet feugiat mi posuere. Nisl a turpis massa sollicitudin.
-                            Lectus ac iaculis morbi dolor orci, at sed amet. Gravida aliquet diam diam dictum dictumst sit in. Cum consectetur adipiscing quisque proin ultrices etiam urna, donec. In sed porta vitae eu senectus consectetur lacus, diam. Ipsum amet, cras velit at amet. Dui nam placerat diam et pellentesque cursus.
-                            Orci facilisis volutpat consequat, consequat enim elit ultrices habitasse. Lacus tempus amet malesuada velit tortor. Nunc arcu, enim, ullamcorper pulvinar in id sed turpis in. Facilisi dui arcu, scelerisque nibh donec porttitor. Proin quis nisi ultrices amet, lacus, varius pellentesque tellus. Orci, urna, egestas mauris sit euismod quam vitae rhoncus dignissim. Sed suscipit egestas tortor, posuere posuere adipiscing dictum nullam. 
+                <p className='Long_Para'><p>While the National Institutes of Technology are known for their excellence in the academic field, they are also au courant on the importance of an individual’s extra curriculum. These institutions acknowledge the need to nurture among its staff and students a competitive spirit in the non-academic fields to help inculcate qualities of leadership, tolerance and build an overall power of reasoning.</p>
+
+<p>For this purpose, the All India Inter NIT sports meet came into being. It is an annual sports event held with great fervor in order to enthrall the students as well as accentuate their inner athlete. Students from all of the 31 NITs take part in this event with great zeal and avidity to compete against each other and add to the booming enthusiasm. Sports events for staff and faculties of the 31 NITs are also held to create a gusto and motivate them to work towards their physical well being.</p>
+
+<p>The Inter NIT sports event not only enables individuals to develop their physical skills but also helps them create a wider network through interaction with students from different NITs and making new acquaintances. Students also get to visit and explore a new city adding to the zest and eagerness to be a part of this event.</p>
+
+<p>Under the Inter NIT sports meet, every year, different NITs are hosts to a multitude of sports events. The hosts for this year’s inter NIT are MNIT Jaipur, NIT Silchar, NIT Surathkal, NIT Rourkela, NIT Surat, VNIT Nagpur and NIT Hamirpur. This year, NIT Silchar will be organising the Badminton, Table tennis and Chess tournaments from 18th to 20th November, where students from different NITs all across the country will engage in, to win and become the premier athlete. </p>
+
                 </p>
             </div>
             <img className='Director_Sir_Img' src={Director_Sir} alt='Director Sir'/>
