@@ -3,26 +3,39 @@
 .home-words-heading {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 5rem;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+}
+
+.home-words-title{
+  font-size: 2.4rem ;
 }
 
 .home-words-container {
   max-width: 85%;
   margin: 8rem auto;
 }
-.home-words-content-container {
+
+.flex-col-r{
   display: flex;
-  align-items: center;
-  margin: 3rem auto;
+  flex-direction: column;
+
 }
 
-@media (max-width: 900px) {
+.home-words-content-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 3rem auto;
+}
+
+@media only screen and (max-width: 900px) {
   .home-words-content-container{
     flex-direction: column !important;
-    margin: 5rem auto;
+    margin: 2rem auto 5rem auto;
   }
   .home-words-content-words{
     margin: auto;
@@ -33,7 +46,7 @@
   }
 }
 
-@media (max-width: 370px) {
+@media only screen and (max-width: 370px) {
   .home-words-content-container {
     flex-direction: column;
   }
@@ -43,7 +56,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
 }
 
 .home-words-content-words{
@@ -57,11 +70,8 @@
   margin-top: 3rem;
   margin-bottom: auto;
 }
-.home-words-content-person-desk {
-  text-align: center;
-  font-family: "Oswald";
-  font-size: 1.5rem;
-  font-weight: 500;
+.home-words-title{
+  font-size: 3em;
 }
 .home-words-content-person-name {
   text-align: center;
@@ -140,7 +150,7 @@
     font-size: 1.5rem;
   }
   .home-words-content-person-desk{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   .home-words-content-person-name{
     font-size: 1.5rem;
