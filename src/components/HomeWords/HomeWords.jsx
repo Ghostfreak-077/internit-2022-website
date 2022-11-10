@@ -29,6 +29,7 @@ class HomeWords extends Component {
                   {wordInfo.desg}
                 </h4>
               </div>
+                <p className="home-word-content-words mx-5">{wordInfo.text}</p>
             </div>
             </>
           );

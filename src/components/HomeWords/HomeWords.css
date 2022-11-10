@@ -103,6 +103,9 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: #878787;
+  margin-bottom: auto;
+  margin-top: 3rem;
+  text-align: left;
 }
 
 @media (max-width: 430px){
