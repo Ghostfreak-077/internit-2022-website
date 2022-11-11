@@ -4,17 +4,19 @@ import ImageSlider from "./Home/ImageSlider";
 import images from "./Home/Images";
 import What_We_Offer from "./Home/What_We_Offer";
 
-import HomeCarouselTwo from "./HomeCarouselTwo/HomeCarouselTwo";
+// import HomeCarouselTwo from "./HomeCarouselTwo/HomeCarouselTwo";
 import HomeUpcoming from "./HomeUpcoming/HomeUpcoming";
 import HomeAchievements from "./HomeAchievements/HomeAchievements";
 import HomeWords from "./HomeWords/HomeWords";
 import ParticipatingNits from "./Home/ParticipatingNit";
+import PreviousYear from "./HomePreviousYears/Previousyear";
 const Home = () => {
   return (
     <div>
       <ImageSlider images={images}/>
 
-      <HomeCarouselTwo />
+      {/* <HomeCarouselTwo /> */}
+      <PreviousYear/>
 
       <About_Inter_Nit/>
 
