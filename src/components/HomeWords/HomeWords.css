@@ -3,7 +3,7 @@
 .home-words-heading {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
@@ -108,6 +108,12 @@
   text-align: left;
 }
 
+@media (max-width: 510px) {
+  .home-words-heading{
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 430px){
   .home-words-heading{
     font-size: 1.8rem;
@@ -115,6 +121,13 @@
   .home-words-content-person{
     margin: auto;
   }
+  .home-words-content-words{
+    font-size: 1rem;
+    color: #878787;
+    line-height: 25px;
+    font-weight: 500;
+    padding: 0;
+  }  
 }
 
 @media (max-width: 346px){
@@ -159,7 +172,7 @@
     font-size: 1.5rem;
   }
   .home-words-content-words{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #878787;
     line-height: 25px;
     font-weight: 500;
