@@ -167,6 +167,15 @@
   }
 }
 
+@media (max-width: 450px){
+  .home-words-content-img {
+    width: 60%;
+  }
+  .home-word-content-words {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 370px) {
   .home-words-content-img {
     width: 50vw;

@@ -4,7 +4,6 @@ import './Participating.css'
 
 const ParticipatingNit = () => {
     return (
-        <>
             <div className='Participate'>
                 <div className='participate'>
                     <p className='himang'>PARTICIPATING NITS</p>
@@ -13,7 +12,6 @@ const ParticipatingNit = () => {
                     <img className='imgHimang2' src={ParticipatingImage} alt="Participating Nits"></img>
                 </div>
             </div>
-        </>
     )
 }
 
