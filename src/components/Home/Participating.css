@@ -3,9 +3,7 @@
 .Participate{
     justify-content: center;
     text-align: center;
-    margin: 3em;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 5em;
 }
 
 .himang{
@@ -22,13 +20,13 @@
 
 @media (max-width: 810px){
     .imgHimang2{
-        width: 40%;
+        width: 52%;
     }
 }
 
 @media (max-width: 540px){
     .imgHimang2{
-        width: 50%;
+        width: 60%;
     }
     .himang{
         font-size: 2rem;

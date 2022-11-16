@@ -6,7 +6,7 @@ class HomeWords extends Component {
   render() {
     this.state = HomeWordsData;
     return (
-      <div className="home-words-container container">
+      <div className="home-words-container container mb-5">
         {/* <h2 className="home-words-heading">Some words from</h2>
         <h2 className="home-words-heading my-2">Our team heads</h2> */}
         {this.state.map((wordInfo) => {
