@@ -15,9 +15,11 @@ const Admin = (props) => {
     const [team2score, setTeam2Score] = useState()
     const [putChange, setPutChange] = useState()
     const [delChange, setDelChange] = useState()
+    const [date, setDate] = useState(new Date)
+    const [time, setTime] = useState(new Date)
     const [email, setEmail] = useState('')
     const [pass, setPass] = useState('')
-    const { logged, setLogged } = props
+    const { flash, setFlash, logged, setLogged } = props
 
     const [post, setPost] = useState({})
     const { token, setToken } = props
@@ -41,47 +43,46 @@ const Admin = (props) => {
             .then(data => {
                 setPost(data)
                 setToken(data.token)
-                setLogged('admin')
+                data.success === true ? setLogged('admin') : setLogged('defined')
+                setFlash({
+                    msg: data.success === true ? 'Logged In Successfully' : data.message,
+                    category: data.success === true ? "success" : "danger"
+                })
             });
     }
 
 
     const NewMatch = () => {
-        axios.post(url, {
-            "infos": {
-                "team1": team1,
-                "team2": team2,
-                "game": game,
-                "matchType": match,
-                "completed": completed,
-                "team1Point": team1score,
-                "team2Point": team2score
-            },
-            // "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjNlNmM1NTMwY2UxODI4YWI5NzViMyIsImlhdCI6MTY2NzY2OTk1OSwiZXhwIjoxNjY4MTAxOTU5fQ.FRSEoW_i3Fytuc9L6jCYCbHoAsXcvbaKf13OEZ31L8k"
-            "token": token
-        }).then((res) => {
-            setPost(res.data)
-        })
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                "infos": {
+                    "team1": team1,
+                    "team2": team2,
+                    "game": game,
+                    "date": date,
+                    "time": time,
+                    "matchType": match,
+                    "completed": completed,
+                    "team1Point": team1score,
+                    "team2Point": team2score
+                },
+                // "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjNlNmM1NTMwY2UxODI4YWI5NzViMyIsImlhdCI6MTY2NzY2OTk1OSwiZXhwIjoxNjY4MTAxOTU5fQ.FRSEoW_i3Fytuc9L6jCYCbHoAsXcvbaKf13OEZ31L8k"
+                "token": token
+            })
+        };
+        fetch(url, requestOptions)
+            .then(response => response.json())
+            .then((res) => {
+                setPost(res.data)
+                setFlash({
+                    msg: res.success === true ? 'Match Added Successfully' : res.message,
+                    category: res.success === true ? "success" : "danger"
+                })
+            })
     }
 
-    const NewTeam = () => {
-        axios.post(host + '/team/new', {
-            "team": {
-                "teamName": newTeam,
-                "teamId": 1,
-                "gamePlayed": 3,
-                "wins": 3,
-                "gold": 2,
-                "silver": 1,
-                "bronze": 0
-            },
-            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjNlNmM1NTMwY2UxODI4YWI5NzViMyIsImlhdCI6MTY2NzgyODcwNCwiZXhwIjoxNjY4MjYwNzA0fQ.5zGY-aaw86ytrDt0NYNuLZs4_wIROm3gUwI1KFBoUDQ"
-        }).then((res) => {
-            setPost(res.data)
-        })
-    }
-
-   
     return (
         <>
 
@@ -121,6 +122,10 @@ const Admin = (props) => {
                             <option value="National Institute of Technology, Kurukshetra">National Institute of Technology, Kurukshetra</option>
                             <option value="National Institute of Technology, Trichy">National Institute of Technology, Trichy</option>
                         </select>
+                    </div>
+                    <div className="date">
+                        <input type="datetime-local" name="date" id="time" value={date} onChange={(e) => { setDate(e.target.value) }} />
+                        <input type="time" name="time" id="time" value={time} onChange={(e) => { setTime(e.target.value) }} />
                     </div>
                     <div className='HugMatch my-3'>
                         <p className='corresponding_ my-1'>Match Type </p>

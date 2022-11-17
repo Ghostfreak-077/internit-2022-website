@@ -19,15 +19,15 @@ const Footer = () => {
                         <h2>Address</h2>
                         <ul><a href="mailto:sports@nits.ac.in"><SiGmail size={20} className="footer-loc-btn"/>sports@nits.ac.in</a></ul>
                         <ul><a href="tel:+917637906868"><BsFillTelephoneFill size={20} className="footer-loc-btn"/>+917637906868</a></ul>
-                        <ul><MdLocationOn  size={25} className="footer-loc-btn"/>NIT Silchar,Cachar,Assam</ul>
+                        <ul><MdLocationOn  size={25} className="footer-loc-btn"/>NIT Road, Fakiratilla, Silchar, Assam 788010</ul>
                     </div>
                     <div className="footer-links">
                         <h2>Follow us on</h2>
                         <div className="footer-btns" >
                         <div className="footer-btn-respon">
 
-                        <a href="/"><button className="footer-link-btn"><AiFillLinkedin size={25} className="icon-btn-1"/></button></a>
-                        <a href="/"><button className="footer-link-btn"><AiFillTwitterCircle size={25} className="icon-btn-2"/></button></a>
+                        {/* <a href="/"><button className="footer-link-btn"><AiFillLinkedin size={25} className="icon-btn-1"/></button></a>
+                        <a href="/"><button className="footer-link-btn"><AiFillTwitterCircle size={25} className="icon-btn-2"/></button></a> */}
                         <a href="/"><button className="footer-link-btn"><MdOutlineFacebook size={25} className="icon-btn-3"/></button></a>
                         <a href="/"><button className="footer-link-btn"><AiOutlineInstagram size={25} className="icon-btn-4"/></button></a>
                         </div>

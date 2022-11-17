@@ -99,29 +99,29 @@ const Stats = (props) => {
 
       <GameSelect statsGames={statsGames} setStatsGames={setStatsGames} />
 
-      <div className="table container my-5">
-        <div className="table-heading bg-black text-light text-start d-flex">
+      <div className="table container my-5" style={{overflowX:'scroll'}}>
+        <div style={{minWidth:'720px',overflow:'hidden'}} className="table-heading bg-black text-light text-start d-flex">
           <div className="sno col-1"></div>
-          <div className={`team-name ${logged === 'admi' ? 'col-md-7' : 'col-md-8'}`}>Team Name</div>
-          <div className={`match-played ${logged === 'dmin' ? 'col-md-1' : 'col-md-2'}`}>Played</div>
-          <div className={`wins ${logged === 'dmin' ? 'col-md-1' : 'col-md-2'}`}>Wins</div>
+          <div className={`team-name ${logged === 'admi' ? 'col-md-7' : 'col-8'}`}>Team Name</div>
+          <div className={`match-played ${logged === 'dmin' ? 'col-md-1' : 'col-2'}`}>Played</div>
+          <div className={`wins ${logged === 'dmin' ? 'col-md-1' : 'col-2'}`}>Wins</div>
           {/* <div className="wins col-2 text-dark">{logged}</div> */}
         </div>
         {post.teams.map((element,i) => {
 
           return (
-    <div key={element._id} className={`d-flex flex-column ${i % 2 === 0 ? 'lighter-bg' : 'darker-bg'}`}>
+    <div key={element._id} style={{minWidth:'720px',overflow:'hidden'}} className={`d-flex flex-column ${i % 2 === 0 ? 'lighter-bg' : 'darker-bg'}`}>
             <div className={`table-data d-flex text-start`}>
               <div className="sno col-1 text-center">{i+1}</div>
-              <div className={`team-name d-flex position-relative ${logged === 'adin' ? 'col-md-7' : 'col-md-8'}`}>
+              <div className={`team-name d-flex position-relative ${logged === 'adin' ? 'col-7' : 'col-8'}`}>
               {editing === element._id ? <input type='text' value={teamName} onChange={(e) => { setTeamName(e.target.value) }} placeholder={element.teamName} className="text" /> : <div className="text">{element.teamName}</div>}
                 {logged==='admin'&& editing === 'done'?<div className="btns d-flex p-0 ms-5 position-absolute">
                   <div className="edit text-success me-3" onClick={()=>{setEditing(element._id)}}><AiTwotoneEdit /></div>
                   <div className="delete text-danger me-3" onClick={()=>{deleteTeam(element._id)}}><TiDelete /></div>
                 </div>:''}
               </div>
-              {editing === element._id ? <input type='number' className="match-played ps-3 col-md-2" value={gamePlayed} onChange={(e) => { setGamePlayed(e.target.value) }} placeholder={element.gamePlayed} /> : <div className="match-played ps-3 col-1">{statsGames === 'badminton'? element.badmintonPlayed: statsGames === 'chess'? element.chessPlayed: statsGames === 'tt'?element.ttPlayed:''}</div>}
-              {editing === element._id ? <input type='number' className="wins ps-3 col-md-2" value={wins} onChange={(e) => { setWins(e.target.value) }} placeholder={element.wins} /> : <div className="match-played ps-3 col-1">{statsGames === 'badminton'? element.badmintonWins: statsGames === 'chess'? element.chessWins: statsGames === 'tt'?element.ttWins:''}</div>}
+              {editing === element._id ? <input type='number' className="match-played ps-3 col-md-2" value={gamePlayed} onChange={(e) => { setGamePlayed(e.target.value) }} placeholder={element.gamePlayed} /> : <div className="match-played ps-3 col-2">{statsGames === 'badminton'? element.badmintonPlayed: statsGames === 'chess'? element.chessPlayed: statsGames === 'tt'?element.ttPlayed:''}</div>}
+              {editing === element._id ? <input type='number' className="wins ps-3 col-md-2" value={wins} onChange={(e) => { setWins(e.target.value) }} placeholder={element.wins} /> : <div className="match-played ps-3 col-2">{statsGames === 'badminton'? element.badmintonWins: statsGames === 'chess'? element.chessWins: statsGames === 'tt'?element.ttWins:''}</div>}
             </div>
             {editing===element._id?<div className="btn btn-primary mx-auto done" onClick={()=>{
               setEditing('done');editTeam(element._id, {

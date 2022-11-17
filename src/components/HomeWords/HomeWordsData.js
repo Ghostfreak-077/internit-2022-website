@@ -22,7 +22,7 @@ const HomeWordsData = [
     src: `${HomeWords3}`,
     name: "Mr. M.Suraj Singh",
     desg: "Sports Officer",
-    text: " NIT Silchar has always worked towards the promotion of sporting culture in the institute. And once again we get such a golden opportunity to extend carpets for people across the country for the very enthralling indoor games, namely Badminton, Chess and Table Tennis, a segment of Inter-NIT game. It is an honor as well as an opportunity for me as the Sport’s Officer to be able to set tables for the enthusiastic and sporty engineers from all the NITs. So tighten your shoe laces champs, as the “The more you sweat in practice, the less you bleed in fight.” Jai Hind, May the best team win!",
+    text: `NIT Silchar has always worked towards the promotion of sporting culture in the institute. And once again we get such a golden opportunity to extend carpets for people across the country for the very enthralling indoor games, namely Badminton, Chess and Table Tennis, a segment of All India Inter-NIT tournaments. It is an honor as well as an opportunity for me as the Sport’s Officer to be able to set tables for the enthusiastic and sporty engineers from all the NITs. So tighten your shoe laces champs, as the “The more you sweat in practice, the less you bleed in fight”`,
     // src: `${HomeWords3}`,
   },
 ];

@@ -45,9 +45,11 @@ export default function What_We_Offer() {
           </div>
           <div className="ListWhat">
             <ul className="WriteList">
+              <li>2 separate complexes</li>
+              <li>
+                One of them is equipped with National standard wooden courts
+              </li>
               <li>Functional and sturdy tables</li>
-              <li>Paddles and Ping pong balls</li>
-              <li>Favorable environment</li>
             </ul>
           </div>
         </div>

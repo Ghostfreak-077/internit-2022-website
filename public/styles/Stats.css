@@ -17,6 +17,10 @@
     color: #19204E;
 }
 
+.table{
+    overflow-x: scroll;
+}
+
 .table .lighter-bg{
     background: #E1E1E1;
 }

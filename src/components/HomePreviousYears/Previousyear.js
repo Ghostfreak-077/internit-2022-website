@@ -19,7 +19,7 @@ import pic17 from "./Assets_PrevImages/img17.png"
 const PreviousYear = () => {
     return (
         <div className="prev-main">
-            <h2>CHECKOUT PREVIOUS YEAR PICTURES</h2>
+            <h2>CHECKOUT AIINIT 2019 Table Tennis and Yoga at NIT, Silchar</h2>
 
 
             <div className="prev-container">

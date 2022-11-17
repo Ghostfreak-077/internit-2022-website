@@ -17,26 +17,29 @@ import Footer from './components/Footer/Footer';
 import Leaderboard from './components/Leaderboard';
 import Login from './components/Login';
 import { useState } from 'react';
+import Flash from './components/Flash';
 
 function App() {
 
 const [logged, setLogged] = useState('defined')
 const [token, setToken] = useState('')
+const [flash,setFlash] = useState({msg:'',category:''})
 
   return (
     <div className="App">
       <BrowserRouter>
       <NavBars/>
-      <div className="py-4"> </div>
+      <Flash flash={flash} setFlash={setFlash}/>
+      <div className="py-4"></div> 
     <Routes>
 
       <Route path='/' element={<Home/>}/>
-      <Route path='/far' element={<FixturesAndResults/>}/>
-      <Route path='/leaderboard' element={<Leaderboard token={token} setToken={setToken} logged={logged} setLogged={setLogged}/>}/>
-      <Route path='/stats' element={<Stats logged={logged} token={token} setToken={setToken} setLogged={setLogged}/>}/>
+      <Route path='/far' element={<FixturesAndResults flash={flash} setFlash={setFlash} token={token} setToken={setToken} logged={logged} setLogged={setLogged}/>}/> 
+      <Route path='/leaderboard' element={<Leaderboard flash={flash} setFlash={setFlash} token={token} setToken={setToken} logged={logged} setLogged={setLogged}/>}/>
+      <Route path='/stats' element={<Stats flash={flash} setFlash={setFlash} logged={logged} token={token} setToken={setToken} setLogged={setLogged}/>}/>
       <Route path='/sponsors' element={<Sponsors/>}/>
       <Route path='/team' element={<Team/>}/>
-      <Route path='/admin' element={<AdminPage setLogged={setLogged} logged={logged} setToken={setToken} token={token}/>}/>
+      <Route path='/admin' element={<AdminPage flash={flash} setFlash={setFlash} setLogged={setLogged} logged={logged} setToken={setToken} token={token}/>}/>
       <Route path='/login' element={<Login setLogged={setLogged} logged={logged} />}/>
       
     </Routes>

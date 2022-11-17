@@ -4,7 +4,7 @@ import ScoreCard from "../ScoreCard.jsx";
 import './fixturesAndResults.css'
 import axios from 'axios';
 
-export default function FixturesAndResults() {
+export default function FixturesAndResults(props) {
 
     const dummyData = [
         {
@@ -51,6 +51,10 @@ export default function FixturesAndResults() {
     const [click, setClick] = useState(0);
     const [statsGames, setStatsGames] = useState('badminton')
     const [post, setPost] = useState({ matchs: [] })
+    const [editing, setEditing] = useState('done')
+    const {flash,setFlash, token, setToken,logged, setLogged} = props
+    const [delChange, setDelChange] = useState()
+    const [putChange, setPutChange] = useState()
 
 
     const url = 'http://localhost:5000/api/admin/matchs'
@@ -60,7 +64,7 @@ export default function FixturesAndResults() {
             await setPost(res.data)
             console.log(post);
         })
-    }, [])
+    }, [delChange,putChange])
 
     // function handleClick() {
     //     if (sortBy === "Upcoming") {
@@ -86,8 +90,21 @@ export default function FixturesAndResults() {
                 if (elem.completed===sortBy && (elem.completed === 'upcoming' || 'completed') && statsGames === elem.game) {
 
                     return ( <ScoreCard
+                        flash={flash}
+                        setFlash={setFlash}
                         key={i}
+                        i = {i}
                         data={elem}
+                        logged={logged}
+                        editing={editing}
+                        setEditing={setEditing}
+                        token = {token}
+                        setToken = {setToken}
+                        setLogged={setLogged}
+                        delChange={delChange}
+                        setDelChange={setDelChange}
+                        putChange={putChange}
+                        setPutChange={setPutChange}
                         />)
                     }
 
