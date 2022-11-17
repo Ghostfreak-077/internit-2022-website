@@ -25,3 +25,95 @@
     font-size: 2rem;
   }
 }
+
+.achieve{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  justify-content: space-around;
+}
+
+.small-achieve{
+  background-color: #FCB300;
+  border-radius: 0.6em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4em;
+}
+
+.small-achieve > *{
+  padding-right: 3em;
+  font-family: Oswald, sans-serif;
+  color: #010000;
+}
+
+.small-achieve > span{
+  margin-left: 1.6em;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.small-achieve > h2{
+  /* margin-top: 0.8em; */
+  margin-left: 0.8em;
+}
+
+.small-achieve > h6{
+  margin-left: 1.7em;
+}
+
+@media (max-width: 1200px){
+  .small-achieve > *{
+    padding-right: 2.5em;
+  }
+}
+
+@media (max-width: 992px){
+  .small-achieve > *{
+    padding-right: 2em;
+  }
+  .small-achieve > h2 {
+    font-size: 1.6rem;
+  }
+  .achieve{
+    justify-content: none;
+  }
+  .small-achieve > span{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767px){
+  .achieve {
+    margin-left: -4em;
+    margin-right: -4em;
+  }
+}
+
+@media (max-width: 710px){
+  .achieve {
+    margin-left: -3em;
+    margin-right: -3em;
+  } 
+}
+
+@media (max-width: 664px) {
+  .achieve{
+    grid-auto-flow: row;
+    gap: 0px;
+  }
+  .small-achieve > h2 {
+    padding-right: 3.4em;
+  }
+}
+
+@media (max-width: 421px) {
+  .small-achieve > * {
+    justify-content: center;
+    text-align: center;
+    padding-right: none;
+  }
+  .small-achieve > h2 {
+    padding-right: 20px;
+  }
+}
