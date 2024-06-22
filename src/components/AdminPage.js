@@ -43,7 +43,7 @@ const Admin = (props) => {
             .then(data => {
                 setPost(data)
                 setToken(data.token)
-                data.success === true ? setLogged('admin') : setLogged('defined')
+                data.role === 'admin' ? setLogged('admin') : setLogged('defined')
                 setFlash({
                     msg: data.success === true ? 'Logged In Successfully' : data.message,
                     category: data.success === true ? "success" : "danger"
