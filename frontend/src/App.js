@@ -18,14 +18,17 @@ import Leaderboard from './components/Leaderboard';
 import Login from './components/Login';
 import { useState } from 'react';
 import Flash from './components/Flash';
+import urlContext from './Context';
 
 function App() {
 
 const [logged, setLogged] = useState('defined')
 const [token, setToken] = useState('')
 const [flash,setFlash] = useState({msg:'',category:''})
+const serverUrl = 'https://aiinits22-backend.onrender.com'
 
   return (
+    <urlContext.Provider value={serverUrl}>
     <div className="App">
       <BrowserRouter>
       <NavBars/>
@@ -47,8 +50,8 @@ const [flash,setFlash] = useState({msg:'',category:''})
       </BrowserRouter>
       
     </div>
+    </urlContext.Provider>
   );
 }
 
 export default App;
-

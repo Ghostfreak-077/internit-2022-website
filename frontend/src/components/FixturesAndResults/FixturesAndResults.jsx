@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import GameSelect from '../GameSelect.js/GameSelect.js';
 import ScoreCard from "../ScoreCard.jsx";
 import './fixturesAndResults.css'
 import axios from 'axios';
+import urlContext from '../../Context.jsx';
 
 export default function FixturesAndResults(props) {
 
@@ -56,24 +57,14 @@ export default function FixturesAndResults(props) {
     const [delChange, setDelChange] = useState()
     const [putChange, setPutChange] = useState()
 
-
-    const url = 'http://localhost:5000/api/admin/matchs'
+    const url = useContext(urlContext)
 
     useEffect(() => {
-        axios.get(url).then(async (res) => {
+        axios.get(url+'/api/matches').then(async (res) => {
             await setPost(res.data)
             console.log(post);
         })
     }, [delChange,putChange])
-
-    // function handleClick() {
-    //     if (sortBy === "Upcoming") {
-    //         setSortBy("Completed")
-    //     } else {
-    //         setSortBy("Upcoming")
-    //     }
-    //     setClick(0);
-    // }
 
     return (
         <div>

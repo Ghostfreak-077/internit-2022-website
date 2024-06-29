@@ -1,8 +1,9 @@
 import axios from 'axios';
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import './AdminPage/Admin_Page.css'
+import urlContext from '../Context';
 
 const Admin = (props) => {
     const [team1, setTeam1] = useState('National Institute of Technology, Silchar')
@@ -24,10 +25,10 @@ const Admin = (props) => {
     const [post, setPost] = useState({})
     const { token, setToken } = props
 
-    const host = 'http://localhost:5000/api/admin'
+    const host = useContext(urlContext)+'/api'
     const [cookies, setCookies, removeCookies] = useCookies(['token'])
 
-    const url = 'http://localhost:5000/api/admin/match/new'
+    const url = useContext(urlContext)+'/api/match/new'
 
     const login = () => {
         const requestOptions = {
@@ -86,9 +87,9 @@ const Admin = (props) => {
     return (
         <>
 
-            <div className={`position-absolute ${logged === 'defined' ? 'backdrop' : ''}`}></div>
+            <div className={`position-absolute ${logged === 'admin' ? 'backdrop' : ''}`}></div>
 
-            {logged === 'defined' ? <div className="login">
+            {logged === 'admin' ? <div className="login">
                 <input type="text" name="email" id="email" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="Email Id" />
                 <input type="password" name="pass" id="pass" value={pass} onChange={(e) => { setPass(e.target.value) }} placeholder="Password" />
                 {/* <input type="text" name="token" id="token" value={post.token} /> */}

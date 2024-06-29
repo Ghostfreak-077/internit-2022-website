@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import axios from 'axios'
 import { useEffect } from 'react'
 import { useState } from 'react'
@@ -7,6 +7,7 @@ import './Leaderboard.css'
 import GameSelect from './GameSelect.js/GameSelect'
 import { AiTwotoneEdit } from 'react-icons/ai'
 import { TiDelete } from 'react-icons/ti'
+import urlContext from '../Context'
 
 const Leaderboard = (props) => {
   const team_list = [
@@ -58,7 +59,8 @@ const Leaderboard = (props) => {
   const [post, setPost] = useState({ teams: [] })
   const [putChange, setPutChange] = useState()
   const [delChange, setDelChange] = useState()
-  const url = 'http://localhost:5000/api/admin/teams'
+  const url = useContext(urlContext)
+  // const url = 'http://localhost:5000/api/admin/teams'
   const [statsGames, setStatsGames] = useState('badminton')
   const [editing, setEditing] = useState('done')
   const { token, setToken, logged, setLogged } = props
@@ -66,10 +68,10 @@ const Leaderboard = (props) => {
   const [gold, setGold] = useState()
   const [silver, setSilver] = useState()
   const [bronze, setBronze] = useState()
-  const host = 'http://localhost:5000/api/admin'
+  const host = url+'/api/admin'
 
   useEffect(() => {
-    axios.get(url).then(async (res) => {
+    axios.get(url+'/api/teams').then(async (res) => {
       await setPost(res.data)
       console.log(post);
     })
