@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# All India InterNIT Competitions 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A website built for displaying regular scores of the interNIT competitions held in the campus of NIT Silchar in Nov 2022. The scores are regularly updated, enabling the students to check the scores as soon as a match is over. The Website is built using MERN as a tech stack.
 
-## Available Scripts
+## Installation and Run
 
-In the project directory, you can run:
+The project is hosted [here](https://aiinits22.netlify.app/) using a Netlify service for frontend, while the backend is hosted in Render.
 
-### `npm start`
+For contributing to the project, one must run the repository locally. Firstly, we need to clone the repository to our local environment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```git clone --recursive https://github.com/Ghostfreak-077/internit-2022-website.git```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once we cloned the repository along with its submodules, we need to setup the environment variables. The frontend contains the server url in 'Context.jsx', while in backend the '.env.example' is in config folder
 
-### `npm test`
+### Using NPM
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Next step is to install required dependencies using ```npm install``` in both frontend and backend directories respectively, and run using ```npm run start``` for frontend, while ```npm run dev``` for backend
 
-### `npm run build`
+### Authors
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [@Ghostfreak-077](https://github.com/Ghostfreak-077)
+- [@Himanshu-Sharma](https://github.com/Himangshu-Sarma)
+- [@rayyan-shaikh01](https://github.com/rayyan-shaikh01)
+- [@Rupsnigdha](https://github.com/Rupsnigdha)
+- [@ankit07an](https://github.com/ankit07an)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Feedback
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any feedback, please reach out to us at [mail](mailto:internit2022@gmail.com)
