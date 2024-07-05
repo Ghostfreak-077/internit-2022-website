@@ -7,7 +7,7 @@ export default function About_Inter_Nit(){
         <>
         <div className='Background_Nit'>
             <div className='first_Writing'>
-                <h3 className='Want_to mt-5 mb-4'></h3>
+                <div className='Want_to mt-5 mb-4'></div>
                 <h1 className='About_Inter_Nit pt-2 mb-5'>ABOUT INTER NIT</h1>
                 <p className='Long_Para'><p>While the National Institutes of Technology are known for their excellence in the academic field, they are also au courant on the importance of an individual’s extra curriculum. These institutions acknowledge the need to nurture among its staff and students a competitive spirit in the non-academic fields to help inculcate qualities of leadership, tolerance and build an overall power of reasoning.</p>
 

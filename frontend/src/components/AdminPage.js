@@ -1,32 +1,31 @@
-import axios from 'axios';
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { useState } from 'react';
-import { useCookies } from 'react-cookie';
+// import { useCookies } from 'react-cookie';
 import './AdminPage/Admin_Page.css'
 import urlContext from '../Context';
 
 const Admin = (props) => {
     const [team1, setTeam1] = useState('National Institute of Technology, Silchar')
-    const [newTeam, setNewTeam] = useState('National Institute of Technology, Silchar')
+    // const [newTeam, setNewTeam] = useState('National Institute of Technology, Silchar')
     const [team2, setTeam2] = useState('National Institute of Technology, Rourkela')
     const [match, setMatch] = useState('men_single')
     const [game, setGame] = useState('badminton')
     const [completed, setCompleted] = useState('completed')
     const [team1score, setTeam1Score] = useState()
     const [team2score, setTeam2Score] = useState()
-    const [putChange, setPutChange] = useState()
-    const [delChange, setDelChange] = useState()
-    const [date, setDate] = useState(new Date)
-    const [time, setTime] = useState(new Date)
+    // const [putChange, setPutChange] = useState()
+    // const [delChange, setDelChange] = useState()
+    const [date, setDate] = useState(new Date())
+    const [time, setTime] = useState(new Date())
     const [email, setEmail] = useState('')
     const [pass, setPass] = useState('')
-    const { flash, setFlash, logged, setLogged } = props
+    const { setFlash, logged, setLogged } = props
 
-    const [post, setPost] = useState({})
+    // const [post, setPost] = useState({})
     const { token, setToken } = props
 
     const host = useContext(urlContext)+'/api'
-    const [cookies, setCookies, removeCookies] = useCookies(['token'])
+    // const [cookies, setCookies, removeCookies] = useCookies(['token'])
 
     const url = useContext(urlContext)+'/api/match/new'
 
@@ -42,7 +41,7 @@ const Admin = (props) => {
         fetch(host + '/login', requestOptions)
             .then(response => response.json())
             .then(data => {
-                setPost(data)
+                // setPost(data)
                 setToken(data.token)
                 data.role === 'admin' ? setLogged('admin') : setLogged('defined')
                 setFlash({
@@ -76,7 +75,7 @@ const Admin = (props) => {
         fetch(url, requestOptions)
             .then(response => response.json())
             .then((res) => {
-                setPost(res.data)
+                // setPost(res.data)
                 setFlash({
                     msg: res.success === true ? 'Match Added Successfully' : res.message,
                     category: res.success === true ? "success" : "danger"

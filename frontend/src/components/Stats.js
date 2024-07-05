@@ -9,7 +9,7 @@ import './Leaderboard.css'
 const Stats = (props) => {
 
   const [statsGames, setStatsGames] = useState('badminton')
-  const { token, setToken, logged, setLogged } = props
+  const { token, logged } = props
   const [editing, setEditing] = useState('done')
   const [putChange, setPutChange] = useState()
   const [delChange, setDelChange] = useState()
@@ -18,45 +18,45 @@ const Stats = (props) => {
   const [gamePlayed, setGamePlayed] = useState()
   const [wins, setWins] = useState()
 
-  const team_list = [
-    {
-      'sno': 1,
-      'team': 'National Institute of Technology, Silchar',
-      'mp': 4,
-      'now': 3
-    },
-    {
-      'sno': 2,
-      'team': 'National Institute of Technology, Meghalaya',
-      'mp': 4,
-      'now': 2
-    },
-    {
-      'sno': 3,
-      'team': 'National Institute of Technology, Trichy',
-      'mp': 4,
-      'now': 2
-    },
-    {
-      'sno': 4,
-      'team': 'National Institute of Technology, Jaipur',
-      'mp': 4,
-      'now': 1
-    },
-    {
-      'sno': 5,
-      'team': 'National Institute of Technology, Nagaland',
-      'mp': 4,
-      'now': 0
-    },
-    {
-      'sno': 6,
-      'team': 'National Institute of Technology, Allahabad',
-      'mp': 4,
-      'now': 0
-    },
+  // const team_list = [
+  //   {
+  //     'sno': 1,
+  //     'team': 'National Institute of Technology, Silchar',
+  //     'mp': 4,
+  //     'now': 3
+  //   },
+  //   {
+  //     'sno': 2,
+  //     'team': 'National Institute of Technology, Meghalaya',
+  //     'mp': 4,
+  //     'now': 2
+  //   },
+  //   {
+  //     'sno': 3,
+  //     'team': 'National Institute of Technology, Trichy',
+  //     'mp': 4,
+  //     'now': 2
+  //   },
+  //   {
+  //     'sno': 4,
+  //     'team': 'National Institute of Technology, Jaipur',
+  //     'mp': 4,
+  //     'now': 1
+  //   },
+  //   {
+  //     'sno': 5,
+  //     'team': 'National Institute of Technology, Nagaland',
+  //     'mp': 4,
+  //     'now': 0
+  //   },
+  //   {
+  //     'sno': 6,
+  //     'team': 'National Institute of Technology, Allahabad',
+  //     'mp': 4,
+  //     'now': 0
+  //   },
 
-  ]
+  // ]
 
   const [post, setPost] = useState({ teams: [] })
   const url = 'http://localhost:5000/api/admin/teams'
@@ -64,7 +64,7 @@ const Stats = (props) => {
   useEffect(() => {
     axios.get(url).then(async (res) => {
       await setPost(res.data)
-      console.log(post);
+      // console.log(post);
     })
   }, [putChange,delChange])
 

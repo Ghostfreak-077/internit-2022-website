@@ -1,6 +1,4 @@
 import "./Footer.css"
-import { AiFillLinkedin } from 'react-icons/ai';
-import { AiFillTwitterCircle } from 'react-icons/ai';
 import { MdOutlineFacebook } from 'react-icons/md';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { SiGmail } from 'react-icons/si';

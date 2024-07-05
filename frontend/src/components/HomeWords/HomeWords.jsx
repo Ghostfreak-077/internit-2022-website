@@ -1,15 +1,21 @@
-import React, { Component } from "react";
-import HomeWordsData from "./HomeWordsData";
-import "./HomeWords.css";
+import React, {useState, useEffect} from 'react'
+import HomeWordsData from './HomeWordsData'
+import './HomeWords.css'
 
-class HomeWords extends Component {
-  render() {
-    this.state = HomeWordsData;
-    return (
-      <div className="home-words-container container mb-5">
+const HomeWords = () => {
+
+  const [words, setWords] = useState()
+
+  useEffect(() => {
+    setWords(HomeWordsData)
+  }, [])
+  
+
+  return (
+    <div className="home-words-container container mb-5">
         <h2 className="home-words-heading">Some words from</h2>
         <h2 className="home-words-heading my-2 mb-5">Our team heads</h2>
-        {this.state.map((wordInfo) => {
+        {words?.map((wordInfo) => {
           return (
             <>
                 <h1 className="home-words-content-person-desk">
@@ -35,8 +41,7 @@ class HomeWords extends Component {
           );
         })}
       </div>
-    );
-  }
+  )
 }
 
-export default HomeWords;
+export default HomeWords

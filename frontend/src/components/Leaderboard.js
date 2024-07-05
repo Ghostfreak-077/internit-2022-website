@@ -4,66 +4,66 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { RiMedalFill } from 'react-icons/ri'
 import './Leaderboard.css'
-import GameSelect from './GameSelect.js/GameSelect'
+// import GameSelect from './GameSelect.js/GameSelect'
 import { AiTwotoneEdit } from 'react-icons/ai'
 import { TiDelete } from 'react-icons/ti'
 import urlContext from '../Context'
 
 const Leaderboard = (props) => {
-  const team_list = [
-    {
-      'sno': 1,
-      'team': 'National Institute of Technology, Silchar',
-      'gold': 4,
-      'silver': 3,
-      'bronze': 2
-    },
-    {
-      'sno': 2,
-      'team': 'National Institute of Technology, Meghalaya',
-      'gold': 4,
-      'silver': 2,
-      'bronze': 1
-    },
-    {
-      'sno': 3,
-      'team': 'National Institute of Technology, Trichy',
-      'gold': 4,
-      'silver': 2,
-      'bronze': 4
-    },
-    {
-      'sno': 4,
-      'team': 'National Institute of Technology, Jaipur',
-      'gold': 4,
-      'silver': 1,
-      'bronze': 2
-    },
-    {
-      'sno': 5,
-      'team': 'National Institute of Technology, Nagaland',
-      'gold': 4,
-      'silver': 0,
-      'bronze': 4
-    },
-    {
-      'sno': 6,
-      'team': 'National Institute of Technology, Allahabad',
-      'gold': 4,
-      'silver': 0,
-      'bronze': 5
-    },
+  // const team_list = [
+  //   {
+  //     'sno': 1,
+  //     'team': 'National Institute of Technology, Silchar',
+  //     'gold': 4,
+  //     'silver': 3,
+  //     'bronze': 2
+  //   },
+  //   {
+  //     'sno': 2,
+  //     'team': 'National Institute of Technology, Meghalaya',
+  //     'gold': 4,
+  //     'silver': 2,
+  //     'bronze': 1
+  //   },
+  //   {
+  //     'sno': 3,
+  //     'team': 'National Institute of Technology, Trichy',
+  //     'gold': 4,
+  //     'silver': 2,
+  //     'bronze': 4
+  //   },
+  //   {
+  //     'sno': 4,
+  //     'team': 'National Institute of Technology, Jaipur',
+  //     'gold': 4,
+  //     'silver': 1,
+  //     'bronze': 2
+  //   },
+  //   {
+  //     'sno': 5,
+  //     'team': 'National Institute of Technology, Nagaland',
+  //     'gold': 4,
+  //     'silver': 0,
+  //     'bronze': 4
+  //   },
+  //   {
+  //     'sno': 6,
+  //     'team': 'National Institute of Technology, Allahabad',
+  //     'gold': 4,
+  //     'silver': 0,
+  //     'bronze': 5
+  //   },
 
-  ]
+  // ]
 
   const [post, setPost] = useState({ teams: [] })
   const [putChange, setPutChange] = useState()
   const [delChange, setDelChange] = useState()
   const url = useContext(urlContext)
   // const url = 'http://localhost:5000/api/admin/teams'
-  const [statsGames, setStatsGames] = useState('badminton')
+  // const [statsGames, setStatsGames] = useState('badminton')
   const [editing, setEditing] = useState('done')
-  const { token, setToken, logged, setLogged } = props
+  const { token, logged } = props
   const [teamName, setTeamName] = useState('')
   const [gold, setGold] = useState()
   const [silver, setSilver] = useState()
@@ -73,9 +73,9 @@ const Leaderboard = (props) => {
   useEffect(() => {
     axios.get(url+'/api/teams').then(async (res) => {
       await setPost(res.data)
-      console.log(post);
+      // console.log(post);
     })
-  }, [putChange, delChange])
+  }, [putChange, delChange, url])
 
   const editTeam = (id, data) => {
     axios.put(host + `/team/${id}`, {

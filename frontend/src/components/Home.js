@@ -1,8 +1,8 @@
 import React from "react";
-import About_Inter_Nit from "./Home/About_Inter_Nit";
+import AboutInterNit from "./Home/About_Inter_Nit";
 import ImageSlider from "./Home/ImageSlider";
 import images from "./Home/Images";
-import What_We_Offer from "./Home/What_We_Offer";
+import WhatWeOffer from "./Home/What_We_Offer";
 
 // import HomeCarouselTwo from "./HomeCarouselTwo/HomeCarouselTwo";
 import HomeUpcoming from "./HomeUpcoming/HomeUpcoming";
@@ -18,11 +18,11 @@ const Home = () => {
       {/* <HomeCarouselTwo /> */}
       <PreviousYear/>
 
-      <About_Inter_Nit/>
+      <AboutInterNit/>
 
       <HomeUpcoming />
 
-      <What_We_Offer/>
+      <WhatWeOffer/>
 
       <HomeWords />
       <ParticipatingNits/>

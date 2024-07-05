@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import axios from 'axios'
-import { useEffect } from 'react'
-import { useCookies } from 'react-cookie'
+import React from 'react'
+// import axios from 'axios'
+// import { useEffect } from 'react'
+// import { useCookies } from 'react-cookie'
 
 const Login = () => {
 
-    const [post, setPost] = useState({})
+    // const [post, setPost] = useState({})
 
-    const host = 'http://localhost:5000/api/admin'
-    const [cookies, setCookies, removeCookies] = useCookies(['token'])
+    // const host = 'http://localhost:5000/api/admin'
+    // const [cookies, setCookies, removeCookies] = useCookies(['token'])
 
     // console.log(cookies);
 
@@ -91,7 +91,7 @@ const Login = () => {
 
   return (
     <div>
-      {post.token}
+      {/* {post.token} */}
       {/* <button onClick={login}>Login</button> */}
     </div>
   )

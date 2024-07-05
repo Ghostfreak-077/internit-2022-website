@@ -1,4 +1,4 @@
-import axios from 'axios'
+// import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
 import { AiTwotoneEdit } from 'react-icons/ai'
@@ -6,9 +6,9 @@ import { TiDelete } from 'react-icons/ti'
 
 const ScoreCard = (props) => {
 
-    const {i,data,token,flash, setFlash, setToken, logged, setLogged, editing, setEditing} = props
+    const {i,data,token, setFlash, logged, editing, setEditing} = props
     const host = 'http://localhost:5000/api/admin'
-    const {delChange, setDelChange, putChange, setPutChange} = props
+    const { setDelChange, setPutChange} = props
     const date = new Date(data.date)
     const [completed, setCompleted] = useState('upcoming')
     const [team1Point, setTeam1Point] = useState()
